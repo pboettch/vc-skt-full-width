@@ -1,0 +1,13 @@
+/*
+Theme Name: SKT Full Width
+Layout: Content-Sidebar
+*/
+
+#primary {
+	width: 72%;
+	float: left;
+}
+#secondary {
+	width: 25%;
+	float: right;
+}
