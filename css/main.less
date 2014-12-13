@@ -1,38 +1,48 @@
-/* 
+/*
 **
 ** The file with .less extension has been provided for reference to be used by other developers. Do not touch it if you don't know what it is.
 **
-** Main Stylesheet Document of the theme 
+** Main Stylesheet Document of the theme
 ** This contains basic Structural Details, Styling of the theme.
 */
 
-/* Basic Containers -------------------------------------------------*/
+/* common */
+.bg-style() {
+	background-color:rgba(0, 52, 104, 0.95);  // before background:url(../images/menu-bg.png
+}
 
+/* Basic Containers -------------------------------------------------*/
 @import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
 
 body {font-family:Arial; font-size:12px; color:#aeaeae; }
 .container {width:94.5%; margin:0; }
+
 #page {position:relative; z-index:999; margin:auto; }
 #wrapper {width:1000px; margin:0 auto; padding:0; position:relative; z-index:99999999; }
-#content {padding:20px; word-wrap:break-word; -ms-word-wrap:break-word; background:url(../images/menu-bg.png); }
+#content {padding:20px; word-wrap:break-word; -ms-word-wrap:break-word; .bg-style; }
+
 .blog #content {padding-left:30px; }
 .clear{clear:both; }
+
 /* Links------------------------------------------------- */
 a {color:#86c301; text-decoration:none; outline:none;}
 a:hover,a:focus,a:active {color:#eeeded; }
+
 /*----------- HEADER ------------*/
 .header{ width:248px; margin:0; padding:0; border-left:1px solid #1b1b1b; border-right:1px solid #1b1b1b; float:left; }
-.header .logo{ width:100%; margin:0; padding:60px 0 30px; background:url(../images/menu-bg.png); text-align:center; }
+.header .logo{ width:100%; margin:0; padding:60px 0 30px; .bg-style; text-align:center; }
 .header .logo h1.site-title a{font:700 45px 'Roboto Condensed', Arial; text-decoration:none; }
 .header .logo h1.site-title:first-letter{ color:#86c301; }
+
 /* NAVIGATION */
 /*.page-template-page-full-width-php #site-nav{display:none;}*/
-#site-nav{ width:100%; margin:0; padding:0 0 60px; background:url(../images/menu-bg.png); text-transform:uppercase; font:300 16px 'Roboto Condensed', Arial; }
+#site-nav{ width:100%; margin:0; padding:0 0 60px; .bg-style; text-transform:uppercase; font:300 16px 'Roboto Condensed', Arial; }
 #site-nav ul{ margin:0; padding:0; }
 #site-nav ul li{ display:block; position:relative; list-style:none; border-top:1px #2c2d2e solid; border-bottom:1px #040506 solid; padding:0; line-height:normal; }
 #site-nav ul li a{background:url(../images/nav-icon.png) no-repeat 20px center; padding:6px 0 6px 49px; display:block; font-weight:300; color:#eeeded; text-decoration:none; }
 #site-nav ul li:hover, #site-nav li.current_page_item{background:url(../images/menu-hover.png); }
 #site-nav ul li a:hover, #site-nav li.current_page_item a{ text-decoration:none; background-image:url(../images/nav-icon-hover.png); color:#7bb303; }
+
 /* ----------- Drop Down Menu ------- */
 .noBottomBorder{border-bottom:none !important; }
 .haschild{background:url(../images/menu_sub_icon.png) no-repeat center right; }
@@ -48,9 +58,11 @@ a:hover,a:focus,a:active {color:#eeeded; }
 #site-nav ul li:hover ul li:hover ul li:hover ul li:hover ul{display:block; }
 #site-nav ul li:hover ul li:hover ul li:hover ul li:hover ul li ul{display:none; }
 #site-nav ul li:hover ul li:hover ul li:hover ul li:hover ul li:hover ul{display:block; }
+
 .header .header-bottom{ width:100%; margin:0; padding:0; background:url(../images/header-bottom-shape.png) no-repeat bottom; height:53px; }
 #header-bottom-shape{ background:url(../images/header-bottom-shape2.png) no-repeat top; width:75px; height:44px; cursor:pointer; margin-left:86px; }
 #header-bottom-shape.showDown{background-image:url(../images/header-bottom-shape1.png); }
+
 /* Slider Styles------------------------------------------------*/
 .slider-parent {position:fixed; -moz-background-size:cover; -webkit-background-size:cover; -khtml-background-size:cover; background-size:cover; width:100%; height:100%; }
 .texture_overlay_1, .texture_overlay_2{ width:100%; height:100%;}
@@ -62,6 +74,7 @@ div.slide-title {display:block; background-color:transparent; color:#fff; font:b
 div.slide-title span{background:url(../images/transparent_black.png) repeat left top; display:inline-block; padding:10px 15px;}
 div.slide-title a{color:#fff;}
 a div.slide-title{color:#eeeded; text-decoration:none; border:none !important;}
+
 /*Homepage --------------------------------------------------*/
 h2#page-title,.archive h1.page-title,.page h1.entry-title {font-size:30.52px; font-family:'Roboto Condensed', Arial; font-weight:lighter; display:inline-block; clear:both; text-transform:uppercase; padding:51px 0 0; color:#eeeded; }
 h2#page-title:first-letter,.archive h1.page-title:first-letter,.page h1.entry-title:first-letter {color:#86c301; }
@@ -74,6 +87,7 @@ h2#page-title:first-letter,.archive h1.page-title:first-letter,.page h1.entry-ti
 .homepage-article h1.entry-title a {font-family:Calibri, Arial, Helvetica, sans-serif; color:#e7e2c5; text-decoration:none; font-size:small; }
 .homepage-article h1.entry-title a:hover {color:white; position:relative; }
 .homepage-article h1.entry-title a[data-title]:hover:after {content:attr(data-title); padding:4px 8px; color:#eee; position:absolute; left:-8px; top:-7px; z-index:20px; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; -moz-box-shadow:0px 0px 4px #222; -webkit-box-shadow:0px 0px 4px #222; box-shadow:0px 0px 4px #222; background:black; overflow:visible; word-wrap:break-word; width:220px; display:inline-block; }
+
 /*Articles, Pages and General Content Section Styling----------------------------------------------------------*/
 /* Floating Details of the Section, which determines the layout is present in the css/layouts folder */
 .single-post {border-bottom:1px dotted #6e5730; padding-bottom:20px; }
@@ -195,6 +209,7 @@ h3.company-title:first-letter{color:#7bb302; }
 .pagination ul  > li:hover > a, .pagination ul  > li > span.current{background:linear-gradient(#3E8D03, #8BB31A); background:-moz-linear-gradient(#3E8D03, #8BB31A); background:-webkit-linear-gradient(#3E8D03, #8BB31A); background:-o-linear-gradient(#3E8D03, #8BB31A);}
 .pagination ul  > li:first-child  > a,.pagination ul  > li:first-child  > span {border-left-width:1px; }
 .pagination ul  > li:last-child  > a,.pagination ul  > li:last-child  > span {border-rigth-width:1px; }
+
 /* HTML Markup & Formatting */
 .single article h1,.page article h1 {font-size:xx-large; }
 .single article h2,.page article h2 {font-size:x-large; }
@@ -209,6 +224,7 @@ h3.company-title:first-letter{color:#7bb302; }
 .single article ul ul ul,.page article ul ul ul {list-style:disc; }
 .single article ol ol,.page article ol ol {list-style:lower-roman; }
 .single article ol ol ol,.page article ol ol ol {list-style-type:lower-alpha; }
+
 .full-width {width:98% !important; }
 .slide-description, .slide-readmore{margin-top:4px; color:#eeeded; font-size:12px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; display:block;}
 .slide-description{font-size:14px; font-style:italic; text-align:right; line-height:1.1;}
@@ -229,6 +245,7 @@ input::-moz-placeholder, textarea::-moz-placeholder{color:#999;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 .errorbox{padding:10px 0; color:#c00;}
 .successbox{padding:10px 0; color:#0a0;}
+
 #secondary.home_front_wrap{width:auto;}
 
 /* Ecommerce */
