@@ -95,4 +95,8 @@ function skt_full_width_admin_header_image() {
 	</div>
 <?php
 }
-endif; // skt_full_width_admin_header_image
+endif; // skt_full_width_admin_header_image 
+
+
+define('SKT_URL','http://www.sktthemes.net');
+define('SKT_THEME_URL','http://www.sktthemes.net/themes');

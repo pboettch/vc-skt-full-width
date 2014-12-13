@@ -13,34 +13,32 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<?php if( (is_home() && get_option('page_for_posts')) || is_front_page() ) { ?>
 
-		<?php if ( have_posts() ) : ?>
+    <div id="primary" class="content-area">
+        <div id="content" class="site-content container">
+            <main id="main" class="site-main" role="main">
+                <header class="page"><h1 class="entry-title">Blog</h1></header>
+                <div class="blog-post">
+                    <?php if( have_posts() ) : ?>
+                        <?php while( have_posts() ) : the_post(); ?>
+                            <?php get_template_part( 'content', get_post_format() ); ?>
+                        <?php endwhile; ?>
+                        <?php skt_full_width_pagination(); ?>
+                    <?php else : ?>
+                        <?php get_template_part( 'no-results', 'index' ); ?>
+                    <?php endif; ?>
+                </div><!-- blog-post -->
+                <?php get_sidebar(); ?>
+                <div class="clear"></div>
+            </main><!-- main -->
+    <?php get_footer(); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+<?php } else { ?>
 
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-				?>
+		</div>
+	</div>
+</body>
+</html>
 
-			<?php endwhile; ?>
-
-			<?php skt_full_width_content_nav( 'nav-below' ); ?>
-
-		<?php else : ?>
-
-			<?php get_template_part( 'no-results', 'index' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+<?php } ?>

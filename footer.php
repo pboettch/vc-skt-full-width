@@ -49,14 +49,14 @@
         </div><!-- bottom-left -->    
         <div class="bottom-right">
 			<?php do_action( 'skt_full_width_credits' ); ?>
-			<?php printf( __( 'Full Width Theme by %1$s', 'Full Width' ), '<a href="http://sktthemes.net" target="_blank" rel="designer">SKT Themes</a>' ); ?>
+			Full Width Theme by <a href="<?php echo SKT_URL; ?>" target="_blank" rel="designer">SKT Themes</a>
 		</div><!-- bottom-right --><div class="clear"></div>
         </div><!-- footer-bottom -->
 </div><!-- #page -->
 
 </div><!-- #primary -->
   </div><!-- wrapper -->
-			 	
+
 <?php wp_footer(); ?>
 </body>
 </html>

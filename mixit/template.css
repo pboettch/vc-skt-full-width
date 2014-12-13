@@ -1,0 +1,131 @@
+/* ------ BOILERPLATE TEMPLATE ------ */
+#Grid p{
+	width: 500px;
+	margin: 0 0 30px;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.controls{
+	display: inline-block; display:block;
+	width: auto; float:right; color:#000000;
+	margin: 0px 18px 8px 30px;
+	vertical-align: top;
+}
+
+.controls li{
+	margin-left: 10px; float:left; padding: 6px 14px 6px 14px; background:#ccc; 
+	cursor: pointer;
+	list-style: none;
+}
+
+.controls li.active {
+	 color:#FFFFFF; background:#3b3b3b;cursor: pointer;
+}
+.portfolio-arrow { display: none; }
+hr{
+	margin: 0 0 30px;
+	height: 0;
+	border: 0 none;
+	border-top: 1px solid #eee;
+}
+
+#Grid{
+	width: 100%;
+	text-align: justify;
+	font-size: 0.1px;
+}
+
+#Grid:after{
+	content: '';
+	display: inline-block;
+	width: 100%;
+}
+#Grid .mix {
+	display: none;
+	opacity: 0; 
+	vertical-align: top;
+	margin: 0px 12px 28px 12px;
+	padding: 4px 0px 0px 0px; 	
+	color: #000; 
+	overflow:hidden;
+	font-size: 12px;
+	text-align: center; cursor: pointer;
+}
+
+#Grid li{ 
+	display:block;
+	opacity: 1;
+}
+
+#Grid .mix .img-box {  
+	display:block; 
+	margin:0px; 
+	padding:0px; 
+	width:295px;
+	height:160px;
+	overflow:hidden;
+}
+
+#Grid .mix .img-box img { 
+	display:block; 
+	width:100%; 
+	max-width:100% !important;
+	height:auto;
+}
+.mix-hover-image, .mix-hover-video{
+	display: none; 
+	height: 160px;
+    width: 295px;
+}
+.mix-hover-image { 
+	background:url(images/magnifier.png) no-repeat center center; 
+	background-color: rgba(255, 255, 255, 0.5); 
+	opacity: 1; 
+	position:absolute; 
+}
+
+.mix-hover-video { 
+	background:url(images/play.png) no-repeat center center; 
+	background-color: rgba(255, 255, 255, 0.5); 
+	opacity: 1; 
+	position:absolute;  
+}
+
+#Grid .mix-details { 
+	display:block; 
+	padding:10px 0px; 
+	text-align:center; 
+	border-top: none; 
+	border-right: 1px solid #ccc; 
+	border-left: 1px solid #ccc; 
+	border-bottom: 1px solid #ccc; 
+	background: #f0f0f0; 
+	color:#000000;
+}
+
+#Grid .mix:hover { 	background:#3b3b3b; }
+#Grid .mix:hover .mix-details { 
+	background:#3b3b3b;  border-top: none; 
+	border-right: 1px solid #3b3b3b; 
+	border-left: 1px solid #3b3b3b; 
+	border-bottom: 1px solid #3b3b3b; 
+	color:#FFFFFF;  
+}
+ 
+#Grid .img-box:hover .blur-box{ display:block !important; }
+
+#Grid .gap{
+	display: inline-block;
+	width: 200px;
+} 
+
+/*
+.controls .active .portfolio-arrow, .controls .filter:hover .portfolio-arrow {
+	display:block;
+    background:transparent url(images/portfolio-arrow.png) left top no-repeat;
+    height:15px;
+    margin:0 auto -15px;
+    padding: 0;
+    width: 15px;
+}*/

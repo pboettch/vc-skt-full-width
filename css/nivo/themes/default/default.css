@@ -20,7 +20,7 @@ Supports Thumbs: true
 	display:none;
 }
 .theme-default .nivoSlider a {
-	border:0;
+	border:none;
 	display:block;
 }
 
@@ -72,7 +72,6 @@ Supports Thumbs: true
 }
 .theme-default .nivo-caption a {
     color:#fff;
-    border-bottom:1px dotted #fff;
 }
 .theme-default .nivo-caption a:hover {
     color:#fff;

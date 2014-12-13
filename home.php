@@ -10,29 +10,40 @@
  * @package SKT Full Width
  */
 
-get_header(); ?>
-<?php /*
-	<div id="primary-home" class="content-area">
-     <div id="content" class="site-content container">
-		<h2 id="page-title"><?php _e("Recent Posts", 'skt_full_width') ?></h2>
-			<main id="main" class="site-main" role="main">
-	
-				<?php //while ( have_posts() ) : the_post(); ?>
-	
-					<?php //get_template_part( 'content', 'home' ); ?>
-	
-					<?php
-						// If comments are open or we have at least one comment, load up the comment template
-						//if ( comments_open() || '0' != get_comments_number() )
-							//comments_template();
-					?>
-	
-				<?php //endwhile; // end of the loop. ?>
-				
-				<?php //skt_full_width_pagination(); ?>
-			</main><!-- #main -->
-            </div><!-- content --><div class="clear"></div>
-	</div><!-- #primary-home-->
+get_header(); 
+?>
 
-<?php //get_sidebar('footer'); ?>
-<?php //get_footer(); ?> */ ?>
+<?php if( is_home() && get_option('page_for_posts') ) { ?>
+
+    <div id="primary" class="content-area">
+        <div id="content" class="site-content container">
+            <main id="main" class="site-main" role="main">
+                <header class="page"><h1 class="entry-title">BLOG</h1></header>
+                <div class="blog-post">
+                    <?php 
+                    /*$paged = ( get_query_var('page') ) ? get_query_var('page') : 1;
+                    $query = new WP_Query( array( 'paged' => $paged, 'posts_per_page' => 3 ) );*/ ?>
+                    <?php if( have_posts() ) : ?>
+                        <?php while( have_posts() ) : the_post(); ?>
+                            <?php get_template_part( 'content', get_post_format() ); ?>
+                        <?php endwhile; ?>
+                        <?php //custom_blogpost_pagination( $query ); ?>
+                        <?php //wp_reset_postdata(); ?>
+                        <?php skt_full_width_pagination(); ?>
+                    <?php else : ?>
+                        <?php get_template_part( 'no-results', 'index' ); ?>
+                    <?php endif; ?>
+                </div><!-- blog-post -->
+                <?php get_sidebar(); ?>
+                <div class="clear"></div>
+            </main><!-- main -->
+    <?php get_footer(); ?>
+
+<?php } else { ?>
+
+		</div>
+	</div>
+</body>
+</html>
+
+<?php } ?>

@@ -292,8 +292,14 @@ function optionsframework_options() {
 		'id' => 'contact5',
 		'std' => 'info@example.com',
 		'type' => 'text');	
-		
-				
+
+		$options[] = array(
+		'name' => __('Disable contact form', 'skt_full_width'),
+		'desc' => __('Check this to disable contact form.', 'skt_full_width'),
+		'id' => 'contact6',
+		'type' => 'checkbox',
+		'std' => '' );
+
 	// Support					
 		$options[] = array(
 		'name' => __('Our Themes', 'skt_full_width'),
@@ -304,7 +310,7 @@ function optionsframework_options() {
 		'type' => 'info');	
 		
 	 $options[] = array(
-		'desc' => __('<a href="http://twitter.com/sktthemes" target="_blank"><img src="'.get_bloginfo('template_url').'/images/sktskill.jpg"></a>', 'skt_full_width'),
+		'desc' => __('<a href="'.SKT_THEME_URL.'" target="_blank"><img src="'.get_template_directory_uri().'/images/sktskill.jpg"></a>', 'skt_full_width'),
 		'type' => 'info');	
 	
 	

@@ -77,23 +77,7 @@ get_header(); ?>
 				<div class="blog-post">
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
-				<?php
-					/* Include the Post-Format-specific template for the content.
-					 * If you want to override this in a child theme, then include a file
-					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-					 */
-					/*if (has_post_thumbnail()) {
-					echo "<a href='";
-						the_permalink();
-					echo "'>";
-						the_post_thumbnail();
-						echo "</a>"; 
-					} */
-						
-					get_template_part( 'content', get_post_format() );
-				?>
-
+				<?php get_template_part( 'content', get_post_format() ); ?>
 			<?php endwhile; ?>
 
 			<?php skt_full_width_pagination(); ?>
