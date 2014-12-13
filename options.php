@@ -80,7 +80,7 @@ function optionsframework_options() {
 	//SLIDER SETTINGS
 
 	$options[] = array(
-		'name' => __('Slider Settings', 'skt-full-width'),
+		'name' => __('Homepage Slider', 'skt-full-width'),
 		'type' => 'heading');
 
 	/*$options[] = array(
@@ -260,7 +260,7 @@ function optionsframework_options() {
 	
 	// Contact Details
 		$options[] = array(
-		'name' => __('Contact Details', 'skt-full-width'),
+		'name' => __('Contact Details for footer', 'skt-full-width'),
 		'type' => 'heading');
 	
 		$options[] = array(
@@ -292,13 +292,6 @@ function optionsframework_options() {
 		'id' => 'contact5',
 		'std' => 'info@example.com',
 		'type' => 'text');	
-
-		$options[] = array(
-		'name' => __('Disable contact form', 'skt-full-width'),
-		'desc' => __('Check this to disable contact form.', 'skt-full-width'),
-		'id' => 'contact6',
-		'type' => 'checkbox',
-		'std' => '' );
 
 	// Support					
 		$options[] = array(

@@ -17,4 +17,7 @@ Version 1.2.2
 	i) Removed un-necessary js files
 	ii) Created POT file
 	iii) Removed contact form
-	
+
+Version 1.3
+	i) Removed contact form field from theme options
+	ii) Renamed slider settings to homepage slider in theme options
