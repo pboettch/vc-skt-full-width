@@ -15,7 +15,7 @@ body {font-family:Arial; font-size:12px; color:#aeaeae; }
 .blog #content {padding-left:30px; }
 .clear{clear:both; }
 /* Links------------------------------------------------- */
-a {color:#86c301; text-decoration:none; }
+a {color:#86c301; text-decoration:none; outline:none;}
 a:hover,a:focus,a:active {color:#eeeded; }
 /*----------- HEADER ------------*/
 .header{ width:248px; margin:0; padding:0; border-left:1px solid #1b1b1b; border-right:1px solid #1b1b1b; float:left; }
@@ -207,7 +207,7 @@ h3.company-title:first-letter{color:#7bb302; }
 .single article h5,.page article h5 {font-size:16px; }
 .single article h6,.page article h6 {font-size:14px; }
 .single article blockquote,.page article blockquote {background:#000; padding:10px; margin-bottom:10px; padding-bottom:1px; font-family:'Roboto Condensed', Arial; }
-.single article table td,.page article table td,.single article table th,.page article table th {padding:5px; background:#f3eab7; }
+.single article table td,.page article table td,.single article table th,.page article table th {padding:5px;}
 .single article table th,.page article table th {border-bottom:solid 3px #100d0a; }
 .single article ul ul,.page article ul ul {list-style:circle; }
 .single article ul ul ul,.page article ul ul ul {list-style:disc; }
@@ -233,8 +233,13 @@ input::-moz-placeholder, textarea::-moz-placeholder{color:#999;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 .errorbox{padding:10px 0; color:#c00;}
 .successbox{padding:10px 0; color:#0a0;}
-
 #secondary.home_front_wrap{width:auto;}
+
+/* Ecommerce */
+.shop_table tr th{border-bottom:1px solid #FFF !important;}
+.woocommerce-result-count{width:100%;}
+mark{background-color:transparent !important;}
+
 
 /* Responsive Design Begins Below---------------------------------------------------*/
 @media screen and (max-width:1100px) and (min-width:960px) {
