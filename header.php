@@ -69,26 +69,30 @@ $post_page = get_option('page_for_posts');
                 ?>
             </div><!--.container-->	
 		</div><!--.slider-parent-->
-        <?php }/* else { ?>
-			<div class="slider-parent" style="background-image:url(<?php echo get_template_directory_uri(); ?>/images/banner-welcome.jpg);"></div>
-        <?php }*/  ?>
-	<?php } elseif( is_single() ) {?>
-		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-			<?php if( has_post_thumbnail() ) {
-                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-                $imgUrl = $large_image_url[0];
-				echo '<div class="slider-parent"  style="background-image:url('.$imgUrl.');"></div><!-- slider-parent -->';
-            } ?>
-      	<?php endwhile; endif; ?>
-	<?php } else { ?>
-		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-			<?php if( has_post_thumbnail() ) {
-                $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-                $imgUrl = $large_image_url[0];
-				echo '<div class="slider-parent"  style="background-image:url('.$imgUrl.');"></div><!-- slider-parent -->';
-            } ?>
-        <?php endwhile; endif; ?>
-	<?php }   ?>
+        <?php } ?>
+	<?php } else {
+		$featured_as_background = esc_html( of_get_option('featured_as_background', true) );
+		if( $featured_as_background != 1 ) {
+			if( is_single() ) {?>
+				<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+					<?php if( has_post_thumbnail() ) {
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+						$imgUrl = $large_image_url[0];
+						echo '<div class="slider-parent"  style="background-image:url('.$imgUrl.');"></div><!-- slider-parent -->';
+					} ?>
+				<?php endwhile; endif; ?>
+			<?php } else { ?>
+				<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
+					<?php if( has_post_thumbnail() ) {
+						$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+						$imgUrl = $large_image_url[0];
+						echo '<div class="slider-parent"  style="background-image:url('.$imgUrl.');"></div><!-- slider-parent -->';
+					} ?>
+				<?php endwhile; endif; 
+			} 
+		}
+	} 
+	?>
 
     <div id="wrapper">
     <div id="secondary" class="widget-area" role="complementary">

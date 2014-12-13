@@ -31,3 +31,6 @@ Version 1.3.2
 
 Version 1.3.3
 	i) Theme outputs validated and sanitized.
+
+Version 1.3.4
+	i) Added option to remove featured image as background image.

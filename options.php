@@ -52,7 +52,14 @@ function optionsframework_options() {
 		'id' => 'footertext2',
 		'std' => 'Full Width 2014. All Rights Reserved',
 		'type' => 'text');
-	
+
+	$options[] = array(
+		'name' => __('Featured image as background', 'skt-full-width'),
+		'desc' => __('Do not use featured image as background image.', 'skt-full-width'),
+		'id' => 'featured_as_background',
+		'type' => 'checkbox',
+		'std' => '' );
+
 	//Layout Settings
 		
 	$options[] = array(
