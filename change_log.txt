@@ -12,3 +12,9 @@ Version 1.2
 
 Version 1.2.1
 	i) Renamed Primary Sidebar widget to Blog Sidebar
+	
+Version 1.2.2
+	i) Removed un-necessary js files
+	ii) Created POT file
+	iii) Removed contact form
+	

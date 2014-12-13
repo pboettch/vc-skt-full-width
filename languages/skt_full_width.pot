@@ -1,141 +1,172 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Sixteen\n"
-"POT-Creation-Date: 2013-10-19 02:19+0530\n"
-"PO-Revision-Date: 2013-10-19 02:20+0530\n"
-"Last-Translator: ROhit <rohit@rohitink.com>\n"
-"Language-Team: Rohitink <rohit@rohitink.com>\n"
-"Language: English\n"
+"Project-Id-Version: SKT Full Width\n"
+"POT-Creation-Date: 2014-03-24 15:28+0530\n"
+"PO-Revision-Date: 2014-03-24 15:32+0530\n"
+"Last-Translator: \n"
+"Language-Team: SKT Themes <support@sktthemes.com>\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;gettext;gettext_noop;__\n"
+"X-Poedit-KeywordsList: __;_e;gettext;gettext_noop\n"
 "X-Poedit-Basepath: .\n"
-"X-Poedit-SearchPath-0: /Users/mac/Documents/Developer/Theme-Development/wp-"
-"content/themes/sixteen\n"
-"X-Poedit-SearchPath-1: /Users/mac/Documents/Developer/Theme-Development/wp-"
-"content/themes/sixteen/inc\n"
+"X-Poedit-SearchPath-0: E:\\xampp\\htdocs\\themes_for_skt\\skt_full_width\\wp-"
+"content\\themes\\skt_full_width\n"
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/404.php:44
+#: ../404.php:16
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: ../404.php:20
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: ../404.php:28
+msgid "Most Used Categories"
+msgstr ""
+
+#: ../404.php:45
 #, php-format
 msgid "Try looking in the monthly archives. %1$s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/archive.php:31
+#: ../archive.php:32
 #, php-format
 msgid "Author: %s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/archive.php:39
+#: ../archive.php:40
 #, php-format
 msgid "Day: %s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/archive.php:42
+#: ../archive.php:43
 #, php-format
 msgid "Month: %s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/archive.php:45
+#: ../archive.php:46
 #, php-format
 msgid "Year: %s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/comments.php:37
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/comments.php:57
+#: ../archive.php:49
+msgid "Asides"
+msgstr ""
+
+#: ../archive.php:52
+msgid "Images"
+msgstr ""
+
+#: ../archive.php:55
+msgid "Videos"
+msgstr ""
+
+#: ../archive.php:58
+msgid "Quotes"
+msgstr ""
+
+#: ../archive.php:61
+msgid "Links"
+msgstr ""
+
+#: ../archive.php:64
+#: ../sidebar.php:12
+msgid "Archives"
+msgstr ""
+
+#: ../comments.php:36
+#: ../comments.php:56
+msgid "Comment navigation"
+msgstr ""
+
+#: ../comments.php:37
+#: ../comments.php:57
 msgid "&larr; Older Comments"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/comments.php:38
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/comments.php:58
+#: ../comments.php:38
+#: ../comments.php:58
 msgid "Newer Comments &rarr;"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-page.php:18
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-single.php:25
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:27
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/image.php:58
+#: ../comments.php:68
+msgid "Comments are closed."
+msgstr ""
+
+#: ../content-page.php:18
+#: ../content-single.php:22
+#: ../content.php:31
+#: ../image.php:58
 msgid "Pages:"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-page.php:23
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-single.php:64
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:61
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/image.php:32
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/image.php:64
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/template-tags.php:71
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/template-tags.php:90
+#: ../content-page.php:23
+#: ../content-single.php:61
+#: ../content.php:65
+#: ../image.php:32
+#: ../image.php:64
+#: ../inc/template-tags.php:71
+#: ../inc/template-tags.php:90
 msgid "Edit"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-single.php:34
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-single.php:37
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:38
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:48
-msgid ", "
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-single.php:42
-#, php-format
-msgid "This entry was tagged %2$s."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-single.php:50
-#, php-format
-msgid "This entry was posted in %1$s and tagged %2$s."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content-single.php:52
-#, php-format
-msgid "This entry was posted in %1$s."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:24
+#: ../content.php:28
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:42
+#: ../content.php:42
+#: ../content.php:52
+msgid ", "
+msgstr ""
+
+#: ../content.php:46
 #, php-format
 msgid "Posted in %1$s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:52
+#: ../content.php:56
 #, php-format
 msgid "Tagged %1$s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:58
+#: ../content.php:62
 msgid "Leave a comment"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:58
+#: ../content.php:62
 msgid "1 Comment"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/content.php:58
+#: ../content.php:62
 msgid "% Comments"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/footer.php:19
-#, php-format
-msgid "Proudly powered by %s"
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/footer.php:21
-#, php-format
-msgid "Theme by %1$s."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/functions.php:30
+#: ../functions.php:35
 msgid "Primary Menu"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/functions.php:44
-msgid "Sidebar"
+#: ../functions.php:51
+msgid "Blog Sidebar"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/image.php:22
+#: ../functions.php:52
+msgid "Appears on blog page sidebar"
+msgstr ""
+
+#: ../header.php:118
+msgid "Menu"
+msgstr ""
+
+#: ../header.php:119
+msgid "Skip to content"
+msgstr ""
+
+#: ../image.php:22
 #, php-format
 msgid ""
 "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime="
@@ -143,400 +174,398 @@ msgid ""
 "href=\"%6$s\" rel=\"gallery\">%7$s</a>"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/image.php:37
+#: ../image.php:37
 msgid "<span class=\"meta-nav\">&larr;</span> Previous"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/image.php:38
+#: ../image.php:38
 msgid "Next <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/no-results.php:19
+#: ../no-results.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: ../no-results.php:20
 #, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:37
+#: ../no-results.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: ../no-results.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: ../options.php:37
 msgid "Basic Settings"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:42
-msgid "Custom Code in Header"
+#: ../options.php:41
+msgid "Logo"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:43
-msgid ""
-"Insert scripts or code before the closing &lt;/head&gt; tag in the document "
-"source:"
+#: ../options.php:42
+msgid "Upload your logo here"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:49
-msgid "Custom Code in Footer"
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:50
-msgid ""
-"Insert scripts or code before the closing &lt;/body&gt; tag in the document "
-"source:"
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:56
+#: ../options.php:50
 msgid "Copyright Text"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:57
+#: ../options.php:51
 msgid ""
 "Some Text regarding copyright of your site, you would like to display in the "
 "footer."
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:65
+#: ../options.php:59
 msgid "Layout Settings"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:80
+#: ../options.php:74
 msgid "Custom CSS"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:81
+#: ../options.php:75
 msgid ""
 "Some Custom Styling for your site. Place any css codes here instead of the "
 "style.css file."
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:89
+#: ../options.php:83
 msgid "Slider Settings"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:93
-msgid "Enable Slider"
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:94
-msgid "Check this to Enable Slider."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:100
-msgid "Using the Slider"
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:101
-msgid ""
-"This Slider supports upto 5 Images. To show only 3 Slides in the slider, "
-"upload only 3 images. Leave the rest Blank. For best results, upload images "
-"of size 1180x500px."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:105
+#: ../options.php:94
 msgid "Slider Image 1"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:106
+#: ../options.php:95
 msgid "First Slide"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:112
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:137
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:162
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:187
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:212
+#: ../options.php:101
+#: ../options.php:126
+#: ../options.php:151
+#: ../options.php:176
+#: ../options.php:201
 msgid "Title"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:118
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:143
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:168
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:193
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:218
+#: ../options.php:107
+#: ../options.php:132
+#: ../options.php:157
+#: ../options.php:182
+#: ../options.php:207
 msgid "Description or Tagline"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:124
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:149
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:174
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:199
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:224
+#: ../options.php:113
+#: ../options.php:138
+#: ../options.php:163
+#: ../options.php:188
+#: ../options.php:213
 msgid "Url"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:130
+#: ../options.php:119
 msgid "Slider Image 2"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:131
+#: ../options.php:120
 msgid "Second Slide"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:155
+#: ../options.php:144
 msgid "Slider Image 3"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:156
+#: ../options.php:145
 msgid "Third Slide"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:180
+#: ../options.php:169
 msgid "Slider Image 4"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:181
+#: ../options.php:170
 msgid "Fourth Slide"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:205
+#: ../options.php:194
 msgid "Slider Image 5"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:206
+#: ../options.php:195
 msgid "Fifth Slide"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:232
+#: ../options.php:221
 msgid "Social Settings"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:236
+#: ../options.php:225
+msgid ""
+"Please set the value of following fields, as per the instructions given "
+"along. If you do not want to use an icon, just leave it blank. If some icons "
+"are showing up, even when no value is set then make sure they are completely "
+"blank, and just save the options once. They will not be shown anymore."
+msgstr ""
+
+#: ../options.php:229
 msgid "Facebook"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:237
+#: ../options.php:230
 msgid "Facebook Profile or Page URL i.e. http://facebook.com/username/ "
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:244
+#: ../options.php:237
 msgid "Twitter"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:245
+#: ../options.php:238
 msgid "Twitter Username"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:252
+#: ../options.php:245
 msgid "Google Plus"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:253
+#: ../options.php:246
 msgid "Google Plus profile url, including \"http://\""
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:260
-msgid "Feeburner"
+#: ../options.php:253
+msgid "Linkedin"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:261
-msgid "URL for your RSS Feeds"
+#: ../options.php:254
+msgid "Linkedin URL"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:268
-msgid "Support"
+#: ../options.php:263
+msgid "Contact Details"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:272
+#: ../options.php:267
+msgid "Company Name"
+msgstr ""
+
+#: ../options.php:273
+msgid "Address 1"
+msgstr ""
+
+#: ../options.php:279
+msgid "Address 2"
+msgstr ""
+
+#: ../options.php:285
+msgid "Phone"
+msgstr ""
+
+#: ../options.php:291
+msgid "Email"
+msgstr ""
+
+#: ../options.php:297
+msgid "Disable contact form"
+msgstr ""
+
+#: ../options.php:298
+msgid "Check this to disable contact form."
+msgstr ""
+
+#: ../options.php:305
+msgid "Our Themes"
+msgstr ""
+
+#: ../options.php:309
 msgid ""
-"Sixteen WordPress theme has been Designed and Created by <a href=\"http://"
-"rohitink.com\" target=\"_blank\">Rohit Tripathi</a>. For any Queries or help "
-"regarding this theme, <a href=\"http://rohitink.com/2013/10/05/sixteen-"
-"wordpress-theme/\" target=\"_blank\">comment on this page.</a> You can also "
-"ask questions about this theme on WordPress.org Support Forums. I will "
-"answer your queries there too."
+"SKT Full Width WordPress theme has been Designed and Created by SKT Themes."
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:276
-msgid ""
-"<a href=\"http://twitter.com/rohitinked\" target=\"_blank\">Follow Me on "
-"Twitter</a> to know about my upcoming themes."
+#: ../options.php:313
+msgid "<a href=\""
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:280
-msgid "Regenerating Post Thumbnails"
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:281
-msgid ""
-"If you are using Sixteen Theme on a New Wordpress Installation, then you can "
-"skip this section.<br />But if you have just switched to this theme from "
-"some other theme, or just updated to the current version of Sixteen, then "
-"you are requested regenerate all the post thumbnails. It will fix all the "
-"isses you are facing with distorted & ugly homepage thumbnail Images. "
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:285
-msgid ""
-"To Regenerate all Thumbnail images, Install and Activate the <a href="
-"\"http://wordpress.org/plugins/regenerate-thumbnails/\" target=\"_blank"
-"\">Regenerate Thumbnails</a> WP Pugin. Then from <strong>Tools &gt; Regen. "
-"Thumbnails</strong>, re-create thumbnails for all your existing images. And "
-"your blog will look even more stylish with Sixteen theme.<br /> "
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:290
-msgid ""
-"<strong>Note:</strong> Regenerating the thumbnails, will not affect your "
-"original images. It will just generate a separate image file for those "
-"images."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:295
-msgid "Theme Credits"
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/options.php:296
-msgid ""
-"Check this if you want to you do not want to give us credit in your site "
-"footer."
-msgstr ""
-
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/search.php:16
+#: ../search.php:17
 #, php-format
 msgid "Search Results for: %s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/extras.php:66
+#: ../sidebar.php:18
+msgid "Meta"
+msgstr ""
+
+#: ../inc/extras.php:66
 #, php-format
 msgid "Page %s"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:147
-msgid "Sixteen Theme Options"
+#: ../inc/options-framework.php:147
+msgid "Full Width Theme Options"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:148
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:377
-msgid "Sixteen Settings"
+#: ../inc/options-framework.php:148
+msgid "Theme Options"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:193
+#: ../inc/options-framework.php:193
 msgid "Clear"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:194
+#: ../inc/options-framework.php:194
 msgid "Default"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:195
+#: ../inc/options-framework.php:195
 msgid "Select Color"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:241
+#: ../inc/options-framework.php:240
 msgid "Click OK to reset. Any theme settings will be lost!"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:273
+#: ../inc/options-framework.php:272
 msgid "Default options restored."
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-framework.php:327
+#: ../inc/options-framework.php:326
 msgid "Options saved."
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-media-uploader.php:51
+#: ../inc/options-framework.php:376
+msgid "SKT Full Width Settings"
+msgstr ""
+
+#: ../inc/options-media-uploader.php:51
 msgid "No file chosen"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-media-uploader.php:54
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-media-uploader.php:113
+#: ../inc/options-media-uploader.php:54
+#: ../inc/options-media-uploader.php:113
 msgid "Upload"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-media-uploader.php:56
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-media-uploader.php:114
+#: ../inc/options-media-uploader.php:56
+#: ../inc/options-media-uploader.php:114
 msgid "Remove"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-media-uploader.php:59
+#: ../inc/options-media-uploader.php:59
 msgid "Upgrade your version of WordPress for full media support."
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-media-uploader.php:83
+#: ../inc/options-media-uploader.php:83
 msgid "View File"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:239
+#: ../inc/options-sanitize.php:237
 msgid "No Repeat"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:240
+#: ../inc/options-sanitize.php:238
 msgid "Repeat Horizontally"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:241
+#: ../inc/options-sanitize.php:239
 msgid "Repeat Vertically"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:242
+#: ../inc/options-sanitize.php:240
 msgid "Repeat All"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:255
+#: ../inc/options-sanitize.php:253
 msgid "Top Left"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:256
+#: ../inc/options-sanitize.php:254
 msgid "Top Center"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:257
+#: ../inc/options-sanitize.php:255
 msgid "Top Right"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:258
+#: ../inc/options-sanitize.php:256
 msgid "Middle Left"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:259
+#: ../inc/options-sanitize.php:257
 msgid "Middle Center"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:260
+#: ../inc/options-sanitize.php:258
 msgid "Middle Right"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:261
+#: ../inc/options-sanitize.php:259
 msgid "Bottom Left"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:262
+#: ../inc/options-sanitize.php:260
 msgid "Bottom Center"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:263
+#: ../inc/options-sanitize.php:261
 msgid "Bottom Right"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:276
+#: ../inc/options-sanitize.php:274
 msgid "Scroll Normally"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:277
+#: ../inc/options-sanitize.php:275
 msgid "Fixed in Place"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:351
+#: ../inc/options-sanitize.php:349
 msgid "Normal"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:352
+#: ../inc/options-sanitize.php:350
 msgid "Italic"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:353
+#: ../inc/options-sanitize.php:351
 msgid "Bold"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/options-sanitize.php:354
+#: ../inc/options-sanitize.php:352
 msgid "Bold Italic"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/template-tags.php:44
+#: ../inc/template-tags.php:34
+msgid "Post navigation"
+msgstr ""
+
+#: ../inc/template-tags.php:44
 msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/template-tags.php:48
+#: ../inc/template-tags.php:48
 msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
 msgstr ""
 
-#: /Users/mac/Documents/Developer/Theme-Development/wp-content/themes/sixteen/inc/template-tags.php:185
+#: ../inc/template-tags.php:71
+msgid "Pingback:"
+msgstr ""
+
+#: ../inc/template-tags.php:94
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../inc/template-tags.php:185
 #, php-format
 msgid ""
 "<span class=\"posted-on\">Published %1$s</span><span class=\"byline\"> by "

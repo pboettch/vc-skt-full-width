@@ -11,7 +11,7 @@ iii) We have used Nivoslider js to slide the background images on homepage. Nivo
 	        http://nivo.dev7studios.com
 	   		http://www.opensource.org/licenses/mit-license.php
 iv) All js that have been used are within folder /js of theme.
-custom.js and keyboard-image-navigation.js, skip-link-focus-fix.js and navigation.js are created by us and come under GPL v2. jquery.min.js comes under MIT license as given in link above for Nivo Slider. superfish.js is dual licensed under MIT and GPL. modernizr.js comes under MIT license.
+custom.js is created by us and come under GPL v2. superfish.js is dual licensed under MIT and GPL.
 
 v) We have used Roboto Google font which comes under Apache Version 2.0 license: http://www.apache.org/licenses/LICENSE-2.0.html	
 	
