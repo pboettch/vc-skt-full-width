@@ -86,15 +86,15 @@ function skt_full_width_scripts() {
 
 	wp_enqueue_style( 'skt_full_width-main-style', get_template_directory_uri()."/css/main.css", array('skt_full_width-layout') );
 	
-	wp_enqueue_style( 'skt_full_width-nivo-slider-default-theme', get_template_directory_uri()."/css/nivo/themes/default/default.css" );
+	wp_enqueue_style( 'skt_full_width-supersized-default-theme', get_template_directory_uri()."/css/supersized.css" );
 	
-	wp_enqueue_style( 'skt_full_width-nivo-slider-style', get_template_directory_uri()."/css/nivo/nivo.css" );
+	wp_enqueue_style( 'skt_full_width-supersized-style', get_template_directory_uri()."/css/supersized.shutter.css" );
 	
-	wp_enqueue_script( 'skt_full_width-nivo-slider', get_template_directory_uri() . '/js/nivo.slider.js', array('jquery') );
+	wp_enqueue_script( 'skt_full_width-supersized-slider', get_template_directory_uri() . '/js/supersized.3.2.7.min.js', array('jquery') );
 	
-	wp_enqueue_script( 'skt_full_width-superfish', get_template_directory_uri() . '/js/superfish.js', array('jquery') );
+	//wp_enqueue_script( 'skt_full_width-superfish', get_template_directory_uri() . '/js/superfish.js', array('jquery') );
 
-	wp_enqueue_script( 'skt_full_width-custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery','skt_full_width-nivo-slider','skt_full_width-superfish') );
+	wp_enqueue_script( 'skt_full_width-supersized-shutter', get_template_directory_uri() . '/js/supersized.shutter.js', array('jquery') );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -103,20 +103,99 @@ function skt_full_width_scripts() {
 add_action( 'wp_enqueue_scripts', 'skt_full_width_scripts' );
 
 function skt_full_width_custom_head_codes() {
- if ( (function_exists( 'of_get_option' )) && (of_get_option('headcode1', true) != 1) ) {
-	echo esc_html( of_get_option('headcode1', true) );
- }
- if ( (function_exists( 'of_get_option' )) && (of_get_option('style2', true) != 1) ) {
-	echo "<style>". esc_html( of_get_option('style2', true) ) ."</style>";
- }
- //Modify CSS a little if Slider is disabled. 
-if ( ( of_get_option('slider_enabled') == 0 ) || ( (is_home() == false) ) )  {
-			echo "<style>.main-navigation {	margin-bottom: -5px;}</style>";
-			}
-			
- if ( ( of_get_option('slider_enabled') == 0 ) || ( (is_front_page() == true) ) )  {
-			echo "<style>.main-navigation {	margin-bottom: 15px;}</style>";
-			}	
+	if ( (function_exists( 'of_get_option' )) && (of_get_option('headcode1', true) != 1) ) {
+		echo esc_html( of_get_option('headcode1', true) );
+	}
+	if ( (function_exists( 'of_get_option' )) && (of_get_option('style2', true) != 1) ) {
+		echo "<style>". esc_html( of_get_option('style2', true) ) ."</style>";
+	}
+	//Modify CSS a little if Slider is disabled. 
+	if ( ( of_get_option('slider_enabled') == 0 ) || ( (is_home() == false) ) )  {
+		echo "<style>.main-navigation {	margin-bottom: -5px;}</style>";
+	}
+	if ( ( of_get_option('slider_enabled') == 0 ) || ( (is_front_page() == true) ) )  {
+		echo "<style>.main-navigation {	margin-bottom: 15px;}</style>";
+	}
+	if ( function_exists( 'of_get_option' )  )  {
+		echo "<style>";
+		if( of_get_option('navigation_icon', true) != '' ){
+			echo "#site-nav ul li a:hover, #site-nav li.current_page_item a{background-image:url(".of_get_option('navigation_icon',true).")}";
+		}
+		if( of_get_option('navigation_color', true) != '' ){
+			echo "#site-nav ul li a:hover, #site-nav li.current_page_item a{color:".of_get_option('navigation_color',true).";}mark, ins, a, .header .logo h1.site-title:first-letter, h2#page-title:first-letter,.archive h1.page-title:first-letter,.page h1.entry-title:first-letter, h2#page-title:first-letter,.archive h1.page-title:first-letter,.page h1.entry-title:first-letter, .single-post h1.entry-title:first-letter, .entry-meta a, .search h1.entry-title:first-letter,.archive h1.entry-title:first-letter, .read-more a:hover, .recent-post .post-box .post-text a, aside ul li a:hover, .widget ul li a:hover, h3.company-title:first-letter, .footer-menu ul li a:hover, .social a:hover, .footer-bottom a{color:".of_get_option('navigation_color',true).";}button, html input[type=\"button\"], input[type=\"reset\"],input[type=\"submit\"]{background-color:".of_get_option('navigation_color',true).";}";
+		}
+		if( (of_get_option('pagin_grad_top_color',true) != '') && (of_get_option('pagin_grad_bottom_color',true) != '') ){
+			echo ".pagination ul  > li  > a, .pagination ul  > li  > span{background:linear-gradient(".of_get_option('pagin_grad_top_color',true).", ".of_get_option('pagin_grad_bottom_color',true).") !important; background:-moz-linear-gradient(".of_get_option('pagin_grad_top_color',true).", ".of_get_option('pagin_grad_bottom_color',true).") !important; background:-webkit-linear-gradient(".of_get_option('pagin_grad_top_color',true).", ".of_get_option('pagin_grad_bottom_color',true).") !important; background:-o-linear-gradient(".of_get_option('pagin_grad_top_color',true).", ".of_get_option('pagin_grad_bottom_color',true).") !important;}.pagination ul  > li:hover > a, .pagination ul  > li > span.current{background:linear-gradient(".of_get_option('pagin_grad_bottom_color',true).", ".of_get_option('pagin_grad_top_color',true).") !important; background:-moz-linear-gradient(".of_get_option('pagin_grad_bottom_color',true).", ".of_get_option('pagin_grad_top_color',true).") !important; background:-webkit-linear-gradient(".of_get_option('pagin_grad_bottom_color',true).", ".of_get_option('pagin_grad_top_color',true).") !important; background:-o-linear-gradient(".of_get_option('pagin_grad_bottom_color',true).", ".of_get_option('pagin_grad_top_color',true).") !important;}";
+		}
+		echo "</style>";
+	}	
+
+
+	?><script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery.supersized({
+			// Functionality
+			slideshow               :   1,			// Slideshow on/off
+			autoplay				:	1,			// Determines whether slideshow begins playing when page is loaded. 
+			start_slide             :   1,			// Start slide (0 is random)
+			stop_loop				:	0,			// Pauses slideshow on last slide
+			random					: 	0,			// Randomize slide order (Ignores start slide)
+			slide_interval          :   5000,		// Length between transitions
+			transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+			transition_speed		:	1000,		// Speed of transition
+			new_window				:	1,			// Image links open in new window/tab
+			pause_hover             :   0,			// Pause slideshow on hover
+			keyboard_nav            :   1,			// Keyboard navigation on/off
+			performance				:	1,			// 0-Normal, 1-Hybrid speed/quality, 2-Optimizes image quality, 3-Optimizes transition speed // (Only works for Firefox/IE, not Webkit)
+			image_protect			:	0,			// Disables image dragging and right click with Javascript
+	
+			// Size & Position
+			min_width		        :   0,			// Min width allowed (in pixels)
+			min_height		        :   0,			// Min height allowed (in pixels)
+			vertical_center         :   1,			// Vertically center background
+			horizontal_center       :   1,			// Horizontally center background
+			fit_always				:	0,			// Image will never exceed browser width or height (Ignores min. dimensions)
+			fit_portrait         	:   1,			// Portrait images will not exceed browser height
+			fit_landscape			:   0,			// Landscape images will not exceed browser width
+	
+			// Components 				
+			slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+			thumb_links				:	1,			// Individual thumb links for each slide
+			thumbnail_navigation    :   0,			// Thumbnail navigation
+			slides 					:  	[			// Slideshow Images
+											<?php
+											if( is_front_page() || is_home() ){
+												for ($i=1;$i<6;$i++) {
+													if ( of_get_option('slide'.$i, true) != "" ) {
+														$imgUrl = esc_url( of_get_option('slide'.$i, true) );
+														$imgTitle = esc_html( of_get_option('slidetitle'.$i, true) );
+														$imgDesc = esc_html( of_get_option('slidedesc'.$i, true) );
+														if( $imgUrl != '' ){
+															echo '{image : \''.$imgUrl.'\', title : \'<div class="slide-title"><span>'.$imgTitle.'</span></div><div class="slide-description"><span>'.$imgDesc.'</span></div>\', thumb : \''.$imgUrl.'\', url : \'\'},'."\n";
+														}
+													}
+												}
+											}else{
+												$featured_as_background = esc_html( of_get_option('featured_as_background', true) );
+												if( $featured_as_background != 1 && has_post_thumbnail() ) {
+													$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+													$imgUrl = $large_image_url[0];
+													echo '{image : \''.$imgUrl.'\', title : \'\', thumb : \''.$imgUrl.'\', url : \'\'},'."\n";
+												}else{
+													$page_bg_image_url = get_background_image();
+													echo '{image : \''.$page_bg_image_url.'\', title : \'\', thumb : \''.$page_bg_image_url.'\', url : \'\'},'."\n";
+												}
+											}
+											?>
+										],
+			// Theme Options 
+			progress_bar			:	1,			// Timer for each slide			
+			mouse_scrub				:	0
+		});
+	});
+	
+	</script><?php
+
 }	
 add_action('wp_head', 'skt_full_width_custom_head_codes');
 

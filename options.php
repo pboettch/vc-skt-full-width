@@ -44,7 +44,6 @@ function optionsframework_options() {
 		'class' => '',
 		'std'	=> get_template_directory_uri()."/images/logo.png",
 		'type' => 'upload');
-				
 		
 	$options[] = array(
 		'name' => __('Copyright Text', 'skt-full-width'),
@@ -60,6 +59,35 @@ function optionsframework_options() {
 		'type' => 'checkbox',
 		'std' => '' );
 
+	$options[] = array(
+		'name' => __('Color Scheme', 'skt-full-width'),
+		'desc' => __('Select the color scheme for theme', 'skt-full-width'),
+		'id' => 'navigation_color',
+		'std' => '#7BB303',
+		'type' => 'color');
+
+	$options[] = array(
+		'name' => __('Navigation Icon', 'skt-full-width'),
+		'desc' => __('Upload icon for navigation<br />(max image size 9px X 9px)', 'skt-full-width'),
+		'id' => 'navigation_icon',
+		'class' => '',
+		'std'	=> get_template_directory_uri()."/images/nav-icon-hover.png",
+		'type' => 'upload');
+		
+	$options[] = array(
+		'name' => __('Pagination Gradient Color - Top', 'skt-full-width'),
+		'desc' => __('Select the top gradient color for pagination links', 'skt-full-width'),
+		'id' => 'pagin_grad_top_color',
+		'std' => '#89b219',
+		'type' => 'color');
+		
+	$options[] = array(
+		'name' => __('Pagination Gradient Color - Bottom', 'skt-full-width'),
+		'desc' => __('Select the bottom gradient color for pagination links', 'skt-full-width'),
+		'id' => 'pagin_grad_bottom_color',
+		'std' => '#3f8d03',
+		'type' => 'color');
+
 	//Layout Settings
 		
 	$options[] = array(
@@ -67,8 +95,8 @@ function optionsframework_options() {
 		'type' => 'heading');	
 	
 	$options[] = array(
-		'name' => "Header Layout",
-		'desc' => "Select Layout for Menu position.",
+		'name' => "Menu Layout",
+		'desc' => "Select Layout for Menu position. It applies on inner pages only.",
 		'id' => "sidebar-layout",
 		'std' => "left",
 		'type' => "images",
@@ -319,7 +347,7 @@ function optionsframework_options() {
 		'type' => 'info');	
 		
 	 $options[] = array(
-		'desc' => __('<a href="'.SKT_THEME_URL.'" target="_blank"><img src="'.get_template_directory_uri().'/images/sktskill.jpg"></a>', 'skt-full-width'),
+		'desc' => __('<a href="'.SKT_THEME_URL.'" target="_blank"><img src="'.get_template_directory_uri().'/images/sktskill.jpg"></a><p><em>Love this theme? Donate us via PayPal at <strong>sonalsinha21@gmail.com</strong></em></p>', 'skt-full-width'),
 		'type' => 'info');	
 	
 	

@@ -23,7 +23,7 @@ a:hover,a:focus,a:active {color:#eeeded; }
 .header .logo h1.site-title a{font:700 45px 'Roboto Condensed', Arial; text-decoration:none; }
 .header .logo h1.site-title:first-letter{ color:#86c301; }
 /* NAVIGATION */
-.page-template-page-full-width-php #site-nav{display:none;}
+/*.page-template-page-full-width-php #site-nav{display:none;}*/
 #site-nav{ width:100%; margin:0; padding:0 0 60px; background:url(../images/menu-bg.png); text-transform:uppercase; font:300 16px 'Roboto Condensed', Arial; }
 #site-nav ul{ margin:0; padding:0; }
 #site-nav ul li{ display:block; position:relative; list-style:none; border-top:1px #2c2d2e solid; border-bottom:1px #040506 solid; padding:0; line-height:normal; }
@@ -59,7 +59,8 @@ a:hover,a:focus,a:active {color:#eeeded; }
 .nivo-caption a:hover {text-decoration:underline; }
 .nivo-html-caption {display:none; }
 .nivoSlider .slide{width:100%; height:100%; position:fixed; -moz-background-size:cover; -webkit-background-size:cover; -khtml-background-size:cover; background-size:cover; }
-div.slide-title {display:block; background-color:transparent; color:#fff; font:bold 34px "Roboto Condensed", Arial; text-transform:uppercase;}
+div.slide-title {display:block; background-color:transparent; color:#fff; font:bold 34px "Roboto Condensed", Arial; text-transform:uppercase; text-align:right;}
+.home_front_wrap_main{height:100%;}
 div.slide-title span{background:url(../images/transparent_black.png) repeat left top; display:inline-block; padding:10px 15px;}
 a div.slide-title{color:#eeeded; text-decoration:none; border:none !important;}
 .nivo-caption a:hover div.slide-title{color:#fff; border:none;}
@@ -169,7 +170,7 @@ h3.company-title:first-letter{color:#7bb302; }
 .social .linkedin:hover{ background:url(../images/in-icon-hover.png) no-repeat scroll 0 0; }
 .contact{ width:200px; float:left; margin:0 0 0 31px; padding:0; }
 .contact p{ margin:0; padding:0; line-height:25px; }
-.footer-bottom{ width:94.5%; margin:0 auto; padding:20px; background-color:#000; opacity:0.8; }
+.footer-bottom{ width:94%; margin:0 auto; padding:20px 3%; background-color:#000; opacity:0.8; }
 .page-template-page-full-width-php .footer-bottom{width:96%; padding:20px 2%;}
 .footer-bottom a{color:#7bb302; }
 .footer-bottom .bottom-left{ width:260px; margin:0; padding:0; float:left; }
@@ -190,11 +191,11 @@ h3.company-title:first-letter{color:#7bb302; }
 .pagination ul {list-style:none; text-align:center; margin-bottom:0; margin-left:0px; }
 .pagination ul > li {display:inline; }
 .pagination ul > li > a {color:#6a5634; transition:all 0.4s ease; }
-.pagination ul > li > a:hover {color:#5e5340; background:#fdf1ad; }
+.pagination ul > li > a:hover {color:#fff; background:#fdf1ad; }
 .pagination .current {background:#fff3ab; }
-.pagination ul  > li  > a, .pagination ul  > li  > span {float:left; border:none; font-size:12px; margin-right:3px; padding:6px 10px; background:linear-gradient(#8BB31A, #3E8D03) !important; background:-moz-linear-gradient(#8BB31A, #3E8D03) !important; background:-webkit-linear-gradient(#8BB31A, #3E8D03) !important; background:-o-linear-gradient(#8BB31A, #3E8D03) !important; color:#fff; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; }
+.pagination ul  > li  > a, .pagination ul  > li  > span {float:left; border:none; font-size:12px; margin-right:3px; padding:6px 10px; background:linear-gradient(#8BB31A, #3E8D03); background:-moz-linear-gradient(#8BB31A, #3E8D03); background:-webkit-linear-gradient(#8BB31A, #3E8D03); background:-o-linear-gradient(#8BB31A, #3E8D03); color:#fff; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -o-border-radius:3px; }
 #wp_page_numbers li{ margin-right:5px; background:none; }
-.pagination ul  > li:hover > a, .pagination ul  > li > span.current{background:linear-gradient(#3E8D03, #8BB31A) !important; background:-moz-linear-gradient(#3E8D03, #8BB31A) !important; background:-webkit-linear-gradient(#3E8D03, #8BB31A) !important; background:-o-linear-gradient(#3E8D03, #8BB31A) !important;}
+.pagination ul  > li:hover > a, .pagination ul  > li > span.current{background:linear-gradient(#3E8D03, #8BB31A); background:-moz-linear-gradient(#3E8D03, #8BB31A); background:-webkit-linear-gradient(#3E8D03, #8BB31A); background:-o-linear-gradient(#3E8D03, #8BB31A);}
 .pagination ul  > li:first-child  > a,.pagination ul  > li:first-child  > span {border-left-width:1px; }
 .pagination ul  > li:last-child  > a,.pagination ul  > li:last-child  > span {border-rigth-width:1px; }
 /* HTML Markup & Formatting */
@@ -213,7 +214,7 @@ h3.company-title:first-letter{color:#7bb302; }
 .single article ol ol ol,.page article ol ol ol {list-style-type:lower-alpha; }
 .full-width {width:98% !important; }
 .slide-description, .slide-readmore{margin-top:4px; color:#eeeded; font-size:12px; font-family:Arial, Helvetica, sans-serif; font-weight:normal; display:block;}
-.slide-description{font-size:14px; font-style:italic;}
+.slide-description{font-size:14px; font-style:italic; text-align:right; line-height:1.1;}
 .slide-readmore{font-size:12px;}
 .slide-description span{background:url(../images/transparent_black.png) repeat left top; padding:15px; display:inline-block;}
 .slide-readmore a{background:url(../images/menu_sub_icon.png) no-repeat right center; padding-right:20px;}
@@ -231,6 +232,8 @@ input::-moz-placeholder, textarea::-moz-placeholder{color:#999;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 .errorbox{padding:10px 0; color:#c00;}
 .successbox{padding:10px 0; color:#0a0;}
+
+#secondary.home_front_wrap{width:auto;}
 
 /* Responsive Design Begins Below---------------------------------------------------*/
 @media screen and (max-width:1100px) and (min-width:960px) {
@@ -251,7 +254,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 	#secondary {width:70%; float:none; margin:auto; }
 }
 @media screen and (max-width:768px) and (min-width:480px) {
-	#wrapper{min-width:768px;}
+	#wrapper{min-width:480px;}
 	/*.container {width:456px; }*/
 	.main-navigation {top:0px; }
 	#primary {width:95%; float:none; }
@@ -268,7 +271,9 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 	#footer-sidebar .footer-column {width:80%; margin:auto; }
 }
 @media screen and (max-width:480px) {
-	#wrapper{min-width:768px;}
+	#wrapper{min-width:320px;}
+	#sidebar{width:100%; float:none; padding-top:30px;}
+	.blog-post{float:none;}
 	/*.container {width:320px; }*/
 	#primary {width:95%; float:none; }
 	#secondary {width:95%; float:left; }
@@ -280,13 +285,16 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 	.page-template-page-full-width-php #secondary .widget,.home #secondary .widget {width:304px; }
 	#colophon #footertext {float:left; }
 	div.slide-title {font-size:12px; display:block; }
-	div.slide-description {display:none; }
+	/*div.slide-description {display:none; }*/
 	.nivo-caption {max-width:320px; min-width:50px; }
 	#footer-sidebar .footer-column {width:80%; margin:auto; }
+	#secondary.home_front_wrap{margin-bottom:200px;}
 }
 /* Responsive Menu Bar -------------------------------------------------- */
 @media screen and (max-width:767px) {
-	#wrapper{min-width:768px;}
+	#wrapper{min-width:480px;}
+	#sidebar{width:100%; float:none; padding-top:30px;}
+	 .blog-post{float:none;}
 	.menu-toggle,.main-navigation.toggled .nav-menu {display:block; color:#5e5340; font-weight:bold; text-transform:uppercase; padding:10px; font-size:20px; padding-bottom:10px; position:relative; top:-8px; }
 	.menu-toggle:before {content:url('../images/menu.png'); height:0; width:0px; margin-right:20px; position:relative; top:10px; }
 	#nav-wrapper {width:90%; margin-bottom:15px; text-align:center; box-shadow:none; }

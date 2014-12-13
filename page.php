@@ -13,10 +13,11 @@
 get_header(); ?>
 
 	
-	<div id="primary" class="content-area">
+<div id="primary" class="content-area">
     <div id="content" class="site-content container">
 		<main id="main" class="site-main" role="main">
 
+            <div class="blog-post">
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
@@ -29,9 +30,9 @@ get_header(); ?>
 
 			<?php endwhile; // end of the loop. ?>
 
-		</main><!-- #main -->
+            </div><!-- blog-post -->
+			<?php get_sidebar(); ?>
+            <div class="clear"></div>
+        </main><!-- main -->
 	
-
-<?php //get_sidebar(); ?>
-<?php //get_sidebar('footer'); ?>
 <?php get_footer(); ?>

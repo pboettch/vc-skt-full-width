@@ -231,7 +231,7 @@ function optionsframework_page() {
         <?php echo optionsframework_tabs(); ?>
     </h2>
     <div id="optionsframework-metabox" class="metabox-holder">
-	    <div id="optionsframework" class="postbox">
+	    <div id="optionsframework" class="postbox" style="width:72%; float:left;" >
 			<form action="options.php" method="post">
 			<?php settings_fields( 'optionsframework' ); ?>
 			<?php optionsframework_fields(); /* Settings */ ?>
@@ -242,6 +242,33 @@ function optionsframework_page() {
 			</div>
 			</form>
 		</div> <!-- / #container -->
+
+
+        <div style="width:25%; float:right;" class="postbox-container side">
+            <div class="meta-box-sortables ui-sortable">
+                <div class="postbox">
+                    <h3 class="hndle"><span>Our Themes</span></h3>
+                    <div class="inside">
+						<p><a target="_blank" href="http://www.sktthemes.net/themes"><img style="max-width:100%" src="<?php echo get_template_directory_uri()?>/images/sktskill.jpg"></a></p>
+                    </div>
+                </div>
+                <div class="postbox">
+                    <h3 class="hndle"><span>Donate</span></h3>
+                    <div class="inside">
+                        <p><em>Love this theme? Donate us via PayPal at <strong>sonalsinha21@gmail.com</strong></em></p>
+                    </div>
+                </div>
+                <div class="postbox">
+                    <h3 class="hndle"><span>Support</span></h3>
+                    <div class="inside">
+                        <p><em>For support email us at <strong>support@sktthemes.com</strong></em></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
 	</div>
 	<?php do_action( 'optionsframework_after' ); ?>
 	</div> <!-- / .wrap -->

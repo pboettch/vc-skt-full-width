@@ -5,8 +5,8 @@ Template Name: Full Width(No Sidebar)
 
 get_header(); ?>
 
-<div id="primary" class="full-width content-area">
-	<div id="content" class="site-content container">
+<div id="primary" class="content-area">
+    <div id="content" class="site-content container">
 		<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -14,7 +14,7 @@ get_header(); ?>
 				<?php get_template_part( 'content', 'page' ); ?>
 
 				<?php
-					// If comments are open or we have at least one comment, load up the comment template
+					 //If comments are open or we have at least one comment, load up the comment template
 					if ( comments_open() || '0' != get_comments_number() )
 						comments_template();
 				?>
@@ -22,8 +22,5 @@ get_header(); ?>
 			<?php endwhile; // end of the loop. ?>
 
 		</main><!-- #main -->
-	</div><!-- #content -->
-</div><!-- #primary -->
 
-<?php get_sidebar('footer'); ?>
 <?php get_footer(); ?>
