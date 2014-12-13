@@ -118,12 +118,12 @@ function optionsframework_options() {
 		'name' => __('Homepage Slider', 'skt-full-width'),
 		'type' => 'heading');
 
-	/*$options[] = array(
-		'name' => __('Enable Slider', 'skt-full-width'),
-		'desc' => __('Check this to Enable Slider.', 'skt-full-width'),
-		'id' => 'slider_enabled',
-		'type' => 'checkbox',
-		'std' => '' );*/
+	$options[] = array(
+		'name' => __('Slider Effects', 'skt-full-width'),
+		'desc' => __('Add slider effects number eg: 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left.', 'skt-full-width'),
+		'id' => 'sliderefect',
+		'type' => 'text',
+		'std' => '1' );
 		
 	$options[] = array(
 		'name' => __('Slider Image 1', 'skt-full-width'),

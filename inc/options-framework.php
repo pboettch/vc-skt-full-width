@@ -226,12 +226,11 @@ function optionsframework_page() {
 	settings_errors(); ?>
 
 	<div id="optionsframework-wrap" class="wrap">
-    <?php screen_icon( 'themes' ); ?>
     <h2 class="nav-tab-wrapper">
         <?php echo optionsframework_tabs(); ?>
     </h2>
     <div id="optionsframework-metabox" class="metabox-holder">
-    	<div style="padding-bottom:10px;"><a href="http://www.sktthemes.net/themes/skt_full_width_pro/" target="_blank">Buy PRO version for only $30 with more features and access to our support forum.</a></div>
+    	<div style="padding-bottom:10px;"><a href="<?php echo esc_url(SKT_THEME_URL_DIRECT); ?>" target="_blank">Buy PRO version for only $30 with more features and access to our support forum.</a></div>
     	<div style="clear:both"></div>
 	    <div id="optionsframework" class="postbox" style="width:72%; float:left;" >
 			<form action="options.php" method="post">
@@ -257,7 +256,7 @@ function optionsframework_page() {
                 <div class="postbox">
                     <h3 class="hndle"><span>Buy PRO version</span></h3>
                     <div class="inside">
-                        <p><em><a href="http://www.sktthemes.net/themes/skt_full_width_pro/" target="_blank">Click here to check PRO version</a></em></p>
+                        <p><em><a href="<?php echo esc_url(SKT_THEME_URL_DIRECT); ?>" target="_blank">Click here to check PRO version</a></em></p>
                     </div>
                 </div>
                 <div class="postbox">
@@ -403,7 +402,7 @@ function optionsframework_adminbar() {
 			'parent' => 'appearance',
 			'id' => 'of_theme_options',
 			'title' => __( 'SKT Full Width Settings', 'options_framework_theme' ),
-			'href' => admin_url( 'themes.php?page=skt_full_width-options' )
+			'href' => admin_url( 'themes.php?page=fullwidth-options' )
 		));
 }
 
