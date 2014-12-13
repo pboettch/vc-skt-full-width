@@ -1,9 +1,7 @@
 Version 1.0
-
 	i) Intial Release	
 
 Version 1.1
-
 	i)  Added portfolio section
 	ii) Removed a few bugs
 
@@ -11,3 +9,6 @@ Version 1.2
 	i) Removed portfolio section because of custom post types
 	ii) Read me better with all licenses mentioned
 	iii) GPL compliant images and icons   
+
+Version 1.2.1
+	i) Renamed Primary Sidebar widget to Blog Sidebar
