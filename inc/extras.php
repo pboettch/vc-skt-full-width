@@ -63,7 +63,7 @@ function skt_full_width_wp_title( $title, $sep ) {
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		$title .= " $sep " . sprintf( __( 'Page %s', 'skt_full_width' ), max( $paged, $page ) );
+		$title .= " $sep " . sprintf( __( 'Page %s', 'skt-full-width' ), max( $paged, $page ) );
 
 	return $title;
 }

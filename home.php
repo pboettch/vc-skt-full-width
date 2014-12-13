@@ -27,7 +27,7 @@ get_header();
                         <?php while( have_posts() ) : the_post(); ?>
                             <?php get_template_part( 'content', get_post_format() ); ?>
                         <?php endwhile; ?>
-                        <?php //custom_blogpost_pagination( $query ); ?>
+                        <?php //skt_full_width_custom_blogpost_pagination( $query ); ?>
                         <?php //wp_reset_postdata(); ?>
                         <?php skt_full_width_pagination(); ?>
                     <?php else : ?>

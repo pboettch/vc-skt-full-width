@@ -206,7 +206,7 @@ function optionsframework_load_scripts( $hook ) {
 
 function of_admin_head() {
 	// Hook to add custom scripts
-	do_action( 'optionsframework_custom_scripts' );
+	do_action( 'skt_full_width_optionsframework_custom_scripts' );
 }
 
 /* 

@@ -90,23 +90,19 @@ $post_page = get_option('page_for_posts');
         <?php }  ?>
 	<?php } elseif( is_single() ) {?>
 		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-			<?php if( has_post_thumbnail() ){
+			<?php if( has_post_thumbnail() ) {
                 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
                 $imgUrl = $large_image_url[0];
-            } else { 
-                $imgUrl = get_template_directory_uri().'/images/banner_img.jpg';
+				echo '<div class="slider-parent"  style="background-image:url('.$imgUrl.');"></div><!-- slider-parent -->';
             } ?>
-            <div class="slider-parent"  style="background-image:url(<?php echo $imgUrl; ?>);"></div><!-- slider-parent -->
       	<?php endwhile; endif; ?>
 	<?php } else { ?>
 		<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
-			<?php if( has_post_thumbnail() ){
+			<?php if( has_post_thumbnail() ) {
                 $large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
                 $imgUrl = $large_image_url[0];
-            } else { 
-                $imgUrl = get_template_directory_uri().'/images/banner_img.jpg';
+				echo '<div class="slider-parent"  style="background-image:url('.$imgUrl.');"></div><!-- slider-parent -->';
             } ?>
-            <div class="slider-parent"  style="background-image:url(<?php echo $imgUrl; ?>);"></div><!-- slider-parent -->
         <?php endwhile; endif; ?>
 	<?php }   ?>
 
@@ -119,8 +115,8 @@ $post_page = get_option('page_for_posts');
             </div>
       
         <div id="site-nav">
-        <h1 class="menu-toggle"><?php _e( 'Menu', 'skt_full_width' ); ?></h1>
-						<div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'skt_full_width' ); ?></a></div>
+        <h1 class="menu-toggle"><?php _e( 'Menu', 'skt-full-width' ); ?></h1>
+						<div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'skt-full-width' ); ?></a></div>
 	        <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '', 'menu_class' => '') ); ?>
         </div><!-- site-nav -->
         	<div class="header-bottom">

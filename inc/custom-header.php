@@ -10,7 +10,7 @@
  */
 function skt_full_width_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'skt_full_width_custom_header_args', array(
-		'default-image'          => get_template_directory_uri().'/images/tracks.jpg',
+		//'default-image'          => get_template_directory_uri().'/images/banner_bg.jpg',
 		'default-text-color'     => 'fff',
 		'width'                  => 1600,
 		'height'                 => 400,

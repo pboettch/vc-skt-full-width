@@ -14,7 +14,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header>
-				<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'skt_full_width' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+				<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'skt-full-width' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 			</header>
 <div class="blog-post">
 			<?php /* Start the Loop */ ?>

@@ -15,7 +15,7 @@
                 <div class="post-text">
 					<?php
                     $excerpt = get_the_excerpt();
-                    echo string_limit_words($excerpt,7);
+                    echo skt_full_width_string_limit_words($excerpt,7);
                     ?>
                     <div><a href="<?php the_permalink(); ?>">Read more..</a></div>
                 </div><!-- post-text -->
@@ -29,13 +29,13 @@
 
     <?php if ( ! dynamic_sidebar( 'sidebar-1' ) ) : ?>
         <aside id="archives" class="widget">
-            <h1 class="widget-title"><?php _e( 'Archives', 'skt_full_width' ); ?></h1>
+            <h1 class="widget-title"><?php _e( 'Archives', 'skt-full-width' ); ?></h1>
             <ul>
                 <?php wp_get_archives( array( 'type' => 'monthly' ) ); ?>
             </ul>
         </aside>
         <aside id="meta" class="widget">
-            <h1 class="widget-title"><?php _e( 'Meta', 'skt_full_width' ); ?></h1>
+            <h1 class="widget-title"><?php _e( 'Meta', 'skt-full-width' ); ?></h1>
             <ul>
                 <?php wp_register(); ?>
                 <li><?php wp_loginout(); ?></li>

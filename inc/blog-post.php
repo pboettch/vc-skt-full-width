@@ -18,7 +18,7 @@ get_header(); ?>
 					<?php while( $query->have_posts() ) : $query->the_post(); ?>
 	                	<?php get_template_part( 'content', get_post_format() ); ?>
 	                <?php endwhile; ?>
-					<?php custom_blogpost_pagination( $query ); ?>
+					<?php skt_full_width_custom_blogpost_pagination( $query ); ?>
                     <?php wp_reset_postdata(); ?>
                 <?php else : ?>
 	                <?php get_template_part( 'no-results', 'index' ); ?>

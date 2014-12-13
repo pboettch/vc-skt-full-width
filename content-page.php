@@ -15,10 +15,10 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'skt_full_width' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'skt-full-width' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
-	<?php edit_post_link( __( 'Edit', 'skt_full_width' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	<?php edit_post_link( __( 'Edit', 'skt-full-width' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 </article><!-- #post-## -->

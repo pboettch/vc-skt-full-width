@@ -19,7 +19,7 @@ get_header(); ?>
 					<div class="entry-meta">
 						<?php
 							$metadata = wp_get_attachment_metadata();
-							printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s">%4$s &times; %5$s</a> in <a href="%6$s" rel="gallery">%7$s</a>', 'skt_full_width' ),
+							printf( __( 'Published <span class="entry-date"><time class="entry-date" datetime="%1$s">%2$s</time></span> at <a href="%3$s">%4$s &times; %5$s</a> in <a href="%6$s" rel="gallery">%7$s</a>', 'skt-full-width' ),
 								esc_attr( get_the_date( 'c' ) ),
 								esc_html( get_the_date() ),
 								esc_url( wp_get_attachment_url() ),
@@ -29,13 +29,13 @@ get_header(); ?>
 								get_the_title( $post->post_parent )
 							);
 
-							edit_post_link( __( 'Edit', 'skt_full_width' ), '<span class="edit-link">', '</span>' );
+							edit_post_link( __( 'Edit', 'skt-full-width' ), '<span class="edit-link">', '</span>' );
 						?>
 					</div><!-- .entry-meta -->
 
 					<nav role="navigation" id="image-navigation" class="image-navigation">
-						<div class="nav-previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'skt_full_width' ) ); ?></div>
-						<div class="nav-next"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'skt_full_width' ) ); ?></div>
+						<div class="nav-previous"><?php previous_image_link( false, __( '<span class="meta-nav">&larr;</span> Previous', 'skt-full-width' ) ); ?></div>
+						<div class="nav-next"><?php next_image_link( false, __( 'Next <span class="meta-nav">&rarr;</span>', 'skt-full-width' ) ); ?></div>
 					</nav><!-- #image-navigation -->
 				</header><!-- .entry-header -->
 
@@ -55,13 +55,13 @@ get_header(); ?>
 					<?php
 						the_content();
 						wp_link_pages( array(
-							'before' => '<div class="page-links">' . __( 'Pages:', 'skt_full_width' ),
+							'before' => '<div class="page-links">' . __( 'Pages:', 'skt-full-width' ),
 							'after'  => '</div>',
 						) );
 					?>
 				</div><!-- .entry-content -->
 
-				<?php edit_post_link( __( 'Edit', 'skt_full_width' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+				<?php edit_post_link( __( 'Edit', 'skt-full-width' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
 			</article><!-- #post-## -->
 
 			<?php

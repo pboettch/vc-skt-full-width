@@ -31,21 +31,21 @@ function skt_full_width_content_nav( $nav_id ) {
 
 	?>
 	<nav role="navigation" id="<?php echo esc_attr( $nav_id ); ?>" class="<?php echo $nav_class; ?>">
-		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'skt_full_width' ); ?></h1>
+		<h1 class="screen-reader-text"><?php _e( 'Post navigation', 'skt-full-width' ); ?></h1>
 
 	<?php if ( is_single() ) : // navigation links for single posts ?>
 
-		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'skt_full_width' ) . '</span> %title' ); ?>
-		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'skt_full_width' ) . '</span>' ); ?>
+		<?php previous_post_link( '<div class="nav-previous">%link</div>', '<span class="meta-nav">' . _x( '&larr;', 'Previous post link', 'skt-full-width' ) . '</span> %title' ); ?>
+		<?php next_post_link( '<div class="nav-next">%link</div>', '%title <span class="meta-nav">' . _x( '&rarr;', 'Next post link', 'skt-full-width' ) . '</span>' ); ?>
 
 	<?php elseif ( $wp_query->max_num_pages > 1 && ( is_home() || is_archive() || is_search() ) ) : // navigation links for home, archive, and search pages ?>
 
 		<?php if ( get_next_posts_link() ) : ?>
-		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'skt_full_width' ) ); ?></div>
+		<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'skt-full-width' ) ); ?></div>
 		<?php endif; ?>
 
 		<?php if ( get_previous_posts_link() ) : ?>
-		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'skt_full_width' ) ); ?></div>
+		<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'skt-full-width' ) ); ?></div>
 		<?php endif; ?>
 
 	<?php endif; ?>
@@ -68,7 +68,7 @@ function skt_full_width_comment( $comment, $args, $depth ) {
 
 	<li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
 		<div class="comment-body">
-			<?php _e( 'Pingback:', 'skt_full_width' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'skt_full_width' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php _e( 'Pingback:', 'skt-full-width' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'skt-full-width' ), '<span class="edit-link">', '</span>' ); ?>
 		</div>
 
 	<?php else : ?>
@@ -84,14 +84,14 @@ function skt_full_width_comment( $comment, $args, $depth ) {
 					<?php printf( __( sprintf( '<cite class="fn">%s</cite> on', get_comment_author_link() ) ) ); ?>
 					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
 						<time datetime="<?php comment_time( 'c' ); ?>">
-							<?php printf( _x( '%1$s', '1: date', 'skt_full_width' ), get_comment_date(), get_comment_time() ); ?>
+							<?php printf( _x( '%1$s', '1: date', 'skt-full-width' ), get_comment_date(), get_comment_time() ); ?>
 						</time>
 					</a>
-					<?php edit_comment_link( __( 'Edit', 'skt_full_width' ), '<span class="edit-link">', '</span>' ); ?>
+					<?php edit_comment_link( __( 'Edit', 'skt-full-width' ), '<span class="edit-link">', '</span>' ); ?>
 				</div><!-- .comment-metadata -->
 
 				<?php if ( '0' == $comment->comment_approved ) : ?>
-				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'skt_full_width' ); ?></p>
+				<p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'skt-full-width' ); ?></p>
 				<?php endif; ?>
 			</footer><!-- .comment-meta -->
 
@@ -182,7 +182,7 @@ function skt_full_width_posted_on() {
 		esc_html( get_the_modified_date() )
 	);
 
-	printf( __( '<span class="posted-on">Published %1$s</span><span class="byline"> by %2$s</span>', 'skt_full_width' ),
+	printf( __( '<span class="posted-on">Published %1$s</span><span class="byline"> by %2$s</span>', 'skt-full-width' ),
 		sprintf( '<a href="%1$s" rel="bookmark">%2$s</a>',
 			esc_url( get_permalink() ),
 			$time_string

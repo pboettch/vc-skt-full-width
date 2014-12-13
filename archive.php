@@ -29,7 +29,7 @@ get_header(); ?>
 							 * what author we're dealing with (if that is the case).
 							*/
 							the_post();
-							printf( __( 'Author: %s', 'skt_full_width' ), '<span class="vcard">' . get_the_author() . '</span>' );
+							printf( __( 'Author: %s', 'skt-full-width' ), '<span class="vcard">' . get_the_author() . '</span>' );
 							/* Since we called the_post() above, we need to
 							 * rewind the loop back to the beginning that way
 							 * we can run the loop properly, in full.
@@ -37,31 +37,31 @@ get_header(); ?>
 							rewind_posts();
 
 						elseif ( is_day() ) :
-							printf( __( 'Day: %s', 'skt_full_width' ), '<span>' . get_the_date() . '</span>' );
+							printf( __( 'Day: %s', 'skt-full-width' ), '<span>' . get_the_date() . '</span>' );
 
 						elseif ( is_month() ) :
-							printf( __( 'Month: %s', 'skt_full_width' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
+							printf( __( 'Month: %s', 'skt-full-width' ), '<span>' . get_the_date( 'F Y' ) . '</span>' );
 
 						elseif ( is_year() ) :
-							printf( __( 'Year: %s', 'skt_full_width' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
+							printf( __( 'Year: %s', 'skt-full-width' ), '<span>' . get_the_date( 'Y' ) . '</span>' );
 
 						elseif ( is_tax( 'post_format', 'post-format-aside' ) ) :
-							_e( 'Asides', 'skt_full_width' );
+							_e( 'Asides', 'skt-full-width' );
 
 						elseif ( is_tax( 'post_format', 'post-format-image' ) ) :
-							_e( 'Images', 'skt_full_width');
+							_e( 'Images', 'skt-full-width');
 
 						elseif ( is_tax( 'post_format', 'post-format-video' ) ) :
-							_e( 'Videos', 'skt_full_width' );
+							_e( 'Videos', 'skt-full-width' );
 
 						elseif ( is_tax( 'post_format', 'post-format-quote' ) ) :
-							_e( 'Quotes', 'skt_full_width' );
+							_e( 'Quotes', 'skt-full-width' );
 
 						elseif ( is_tax( 'post_format', 'post-format-link' ) ) :
-							_e( 'Links', 'skt_full_width' );
+							_e( 'Links', 'skt-full-width' );
 
 						else :
-							_e( 'Archives', 'skt_full_width' );
+							_e( 'Archives', 'skt-full-width' );
 
 						endif;
 					?>
