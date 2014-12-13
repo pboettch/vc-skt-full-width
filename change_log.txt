@@ -34,3 +34,6 @@ Version 1.3.3
 
 Version 1.3.4
 	i) Added option to remove featured image as background image.
+
+Version 1.3.5
+	i) Responsiveness for iPad and mobile few bugs solved.

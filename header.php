@@ -10,7 +10,7 @@
 <html <?php language_attributes(); ?>>
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<?php /*<meta name="viewport" content="width=device-width, initial-scale=1">*/ ?>
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -45,7 +45,8 @@ $post_page = get_option('page_for_posts');
                     for ($i=1;$i<6;$i++) {
                         $caption = ( of_get_option('slidetitle'.$i, true) == "") ? "" : "#caption_".$i;
                         if ( of_get_option('slide'.$i, true) != "" ) {
-                            echo "<div class='slide' style='background-image:url(".esc_url_raw( of_get_option('slide'.$i, true) ).");'><a href='".esc_url(of_get_option('slideurl'.$i, true))."'><img src='".esc_url( of_get_option('slide'.$i, true) )."' title='".esc_attr($caption)."' height='100%' width='100%'></a></div>"; 
+							$imgUrl = esc_url( of_get_option('slide'.$i, true) );
+                            echo "<div class='slide'><img src='".$imgUrl."' title='".esc_attr($caption)."' /></div>"; 
                             $slider_flag = true;
                         }
                     }

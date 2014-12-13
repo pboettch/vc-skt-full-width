@@ -38,7 +38,13 @@ function hook_custom_javascript(){?>
         jQuery( "#site-nav li:last" ).addClass("noBottomBorder");
         jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
     });
-    </script><?php
+	</script>
+	<?php if( is_front_page() || is_home() ){ ?>
+		<style type="text/css">
+		#wrapper{min-width:97% !important; width:97% !important; margin-left:3%;}
+		#secondary{float:left;}
+        </style><?php 
+	}
 }
 
 ?>

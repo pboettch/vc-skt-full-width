@@ -22,7 +22,7 @@ function hefct() {
 	jQuery('#header-image').css('top', (0 - (scrollPosition * .2)) + 'px');
 }	
 jQuery(window).load(function(){
-	jQuery('#slider').nivoSlider({effect:'boxRandom', pauseTime: 4500,});
+	jQuery('#slider').nivoSlider({effect:'fade', pauseTime: 4500});
 });
 
 (function (factory) {

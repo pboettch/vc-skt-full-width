@@ -8,22 +8,27 @@
  */
  
 /* The Nivo Slider styles */
+.slider-wrapper{
+	height:100%;
+}
 .nivoSlider {
 	position:relative;
 	width:100%;
-	height:auto;
+	height:100%; /*auto*/
 	overflow: hidden;
 }
 .nivoSlider img {
 	position:absolute;
 	top:0px;
 	left:0px;
-	max-width: none;
+	max-width: auto	;
+	min-height:100%;
 }
 .nivo-main-image {
 	display: block !important;
 	position: relative !important; 
-	width: 100% !important;
+	/*width: 100% !important;*/
+	min-height:100%;
 }
 
 /* If an image is wrapped in a link */

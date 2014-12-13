@@ -54,7 +54,7 @@ a:hover,a:focus,a:active {color:#eeeded; }
 .texture_overlay_1{background:url(../images/pattern_1.png) repeat left top;}
 .texture_overlay_2{background:url(../images/pattern_2.png) repeat left top;}
 .slider-wrapper {width:100%; position:relative; }
-.nivo-caption {max-width:550px; min-width:400px; overflow:hidden; top:420px; right:13%; font-family:'Roboto', Arial; font-weight:lighter; text-align:right;}
+.nivo-caption {max-width:550px; min-width:400px; overflow:hidden; bottom:50px; right:25px; font-family:'Roboto', Arial; font-weight:lighter; text-align:right;}
 .nivo-caption a {text-decoration:none; border:none !important; }
 .nivo-caption a:hover {text-decoration:underline; }
 .nivo-html-caption {display:none; }
@@ -234,20 +234,25 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 
 /* Responsive Design Begins Below---------------------------------------------------*/
 @media screen and (max-width:1100px) and (min-width:960px) {
-	.container,#nav-wrapper {width:912px; }
+	#wrapper{min-width:960px;}
+	.container{}
+	#nav-wrapper {width:912px; }
 	#primary-home {padding-left:68px; }
 	.home #secondary {margin-left:2%; }
 	.home #secondary .widget {margin-right:2%; }
 }
 @media screen and (max-width:960px) and (min-width:768px) {
-	.container,#nav-wrapper {width:729.5999999999999px; }
+	#wrapper{min-width:768px;}
+	.container{}
+	#nav-wrapper {width:729.5999999999999px; }
 	#primary-home {padding-left:88px; }
 	#footer-sidebar .footer-column {width:70%; margin:auto; float:none; }
 	#primary {width:95%; float:none; }
 	#secondary {width:70%; float:none; margin:auto; }
 }
 @media screen and (max-width:768px) and (min-width:480px) {
-	.container {width:456px; }
+	#wrapper{min-width:768px;}
+	/*.container {width:456px; }*/
 	.main-navigation {top:0px; }
 	#primary {width:95%; float:none; }
 	#secondary {width:95%; padding-left:10px; }
@@ -263,7 +268,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 	#footer-sidebar .footer-column {width:80%; margin:auto; }
 }
 @media screen and (max-width:480px) {
-	.container {width:320px; }
+	#wrapper{min-width:768px;}
+	/*.container {width:320px; }*/
 	#primary {width:95%; float:none; }
 	#secondary {width:95%; float:left; }
 	#secondary .widget {width:95%; }
@@ -280,6 +286,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder{color:#999;}
 }
 /* Responsive Menu Bar -------------------------------------------------- */
 @media screen and (max-width:767px) {
+	#wrapper{min-width:768px;}
 	.menu-toggle,.main-navigation.toggled .nav-menu {display:block; color:#5e5340; font-weight:bold; text-transform:uppercase; padding:10px; font-size:20px; padding-bottom:10px; position:relative; top:-8px; }
 	.menu-toggle:before {content:url('../images/menu.png'); height:0; width:0px; margin-right:20px; position:relative; top:10px; }
 	#nav-wrapper {width:90%; margin-bottom:15px; text-align:center; box-shadow:none; }
