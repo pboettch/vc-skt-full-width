@@ -43,7 +43,6 @@ get_header();
 
 		</div>
 	</div>
+	<?php wp_footer(); ?>
 </body>
-</html>
-
-<?php } ?>
+</html><?php } ?>

@@ -62,6 +62,7 @@ a:hover,a:focus,a:active {color:#eeeded; }
 div.slide-title {display:block; background-color:transparent; color:#fff; font:bold 34px "Roboto Condensed", Arial; text-transform:uppercase; text-align:right;}
 .home_front_wrap_main{height:100%;}
 div.slide-title span{background:url(../images/transparent_black.png) repeat left top; display:inline-block; padding:10px 15px;}
+div.slide-title a{color:#fff;}
 a div.slide-title{color:#eeeded; text-decoration:none; border:none !important;}
 .nivo-caption a:hover div.slide-title{color:#fff; border:none;}
 /*Homepage --------------------------------------------------*/

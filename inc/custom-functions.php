@@ -39,7 +39,11 @@ function hook_custom_javascript(){?>
         jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
     });
 	</script>
-	<?php if( is_front_page() || is_home() ){ ?>
+    <?php
+    $front_page = get_option('page_on_front');
+	$post_page = get_option('page_for_posts');
+    ?>
+	<?php if( (is_front_page() || is_home()) && ($front_page == 0 && $post_page == 0) ){ ?>
 		<style type="text/css">
 		#wrapper{min-width:97% !important; width:97% !important; margin-left:3%;}
 		#secondary{float:left;}

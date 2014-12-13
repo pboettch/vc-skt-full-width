@@ -130,24 +130,25 @@ function optionsframework_options() {
 		'desc' => __('First Slide', 'skt-full-width'),
 		'id' => 'slide1',
 		'class' => '',
+		'std' => get_template_directory_uri()."/images/banner_bg.jpg",
 		'type' => 'upload');
 	
 	$options[] = array(
 		'desc' => __('Title', 'skt-full-width'),
 		'id' => 'slidetitle1',
-		'std' => '',
+		'std' => 'Slider Image 1',
 		'type' => 'text');
 	
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-full-width'),
 		'id' => 'slidedesc1',
-		'std' => '',
+		'std' => 'Small description for slide 1',
 		'type' => 'textarea');			
 		
 	$options[] = array(
 		'desc' => __('Url', 'skt-full-width'),
 		'id' => 'slideurl1',
-		'std' => '',
+		'std' => '#link1',
 		'type' => 'text',
 		'subtype' => 'url');		
 	
@@ -156,24 +157,25 @@ function optionsframework_options() {
 		'desc' => __('Second Slide', 'skt-full-width'),
 		'class' => '',
 		'id' => 'slide2',
+		'std' => get_template_directory_uri()."/images/banner-welcome.jpg",
 		'type' => 'upload');
 	
 	$options[] = array(
 		'desc' => __('Title', 'skt-full-width'),
 		'id' => 'slidetitle2',
-		'std' => '',
+		'std' => 'Slider Image 2 ',
 		'type' => 'text');	
 	
 	$options[] = array(
 		'desc' => __('Description or Tagline', 'skt-full-width'),
 		'id' => 'slidedesc2',
-		'std' => '',
+		'std' => 'Small description for slide 2',
 		'type' => 'textarea');		
 		
 	$options[] = array(
 		'desc' => __('Url', 'skt-full-width'),
 		'id' => 'slideurl2',
-		'std' => '',
+		'std' => '#link2',
 		'type' => 'text',
 		'subtype' => 'url');	
 		
@@ -182,6 +184,7 @@ function optionsframework_options() {
 		'desc' => __('Third Slide', 'skt-full-width'),
 		'id' => 'slide3',
 		'class' => '',
+		'std' => '',
 		'type' => 'upload');	
 	
 	$options[] = array(
@@ -208,6 +211,7 @@ function optionsframework_options() {
 		'desc' => __('Fourth Slide', 'skt-full-width'),
 		'id' => 'slide4',
 		'class' => '',
+		'std' => '',
 		'type' => 'upload');	
 		
 	$options[] = array(
@@ -234,6 +238,7 @@ function optionsframework_options() {
 		'desc' => __('Fifth Slide', 'skt-full-width'),
 		'id' => 'slide5',
 		'class' => '',
+		'std' => '',
 		'type' => 'upload');	
 		
 	$options[] = array(

@@ -34,7 +34,7 @@ $post_page = get_option('page_for_posts');
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
 
-	<?php if( /*(*/is_front_page() || is_home() /*) && ($front_page == 0 && $post_page == 0)*/ ){ ?>
+	<?php if( (is_front_page() || is_home() ) && ($front_page == 0 && $post_page == 0) ){ ?>
 		<?php if( count($slAr) > 0 ){ ?>
             <div class="slider-parent">	
                 <div class="slider-wrapper theme-default container <?php if( is_front_page() || is_home()  ){ echo 'home_front_wrap_main'; } ?>"> 
