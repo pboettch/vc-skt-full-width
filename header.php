@@ -14,7 +14,7 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-<?php 
+<?php
 $slAr = array();
 for ($i=1;$i<6;$i++) {
 	if ( of_get_option('slide'.$i, true) != "" ) {
@@ -36,9 +36,9 @@ $post_page = get_option('page_for_posts');
 
 	<?php if( (is_front_page() || is_home() ) && ($front_page == 0 && $post_page == 0) ){ ?>
 		<?php if( count($slAr) > 0 ){ ?>
-            <div class="slider-parent">	
-                <div class="slider-wrapper theme-default container <?php if( is_front_page() || is_home()  ){ echo 'home_front_wrap_main'; } ?>"> 
-                
+            <div class="slider-parent">
+                <div class="slider-wrapper theme-default container <?php if( is_front_page() || is_home()  ){ echo 'home_front_wrap_main'; } ?>">
+
                     <!--Thumbnail Navigation-->
                     <div id="prevthumb"></div>
                     <div id="nextthumb"></div>
@@ -62,7 +62,7 @@ $post_page = get_option('page_for_posts');
                         </div>
                     </div><!--Control Bar-->
 
-                </div><!--.container-->	
+                </div><!--.container-->
             </div><!--.slider-parent-->
         <?php } //if( count($slAr) > 0 ){ ?>
 	<?php } ?>
@@ -80,17 +80,12 @@ $post_page = get_option('page_for_posts');
                     </a></h1>
                     <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2><br />
                 </div>
-              
+
                 <div id="site-nav">
                     <h1 class="menu-toggle"><?php _e( 'Menu', 'skt-full-width' ); ?></h1>
                     <div class="screen-reader-text skip-link"><a href="#content"><?php _e( 'Skip to content', 'skt-full-width' ); ?></a></div>
                     <?php wp_nav_menu( array('theme_location' => 'primary', 'container' => '', 'menu_class' => '') ); ?>
                 </div><!-- site-nav -->
-                <div class="header-bottom">
-                    <div id="header-bottom-shape">
-                    </div><!-- header-bottom-shape2 -->
-                </div><!-- header-bottom -->
-                    
             </div><!-- header -->
         </div><!-- secondary -->
-          
+
