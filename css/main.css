@@ -1,11 +1,11 @@
-/* 
+/*
 **** The file with .less extension has been provided for reference to be used by other developers. Do not touch it if you don't know what it is.
 **** Main Stylesheet Document of the theme ** This contains basic Structural Details, Styling of the theme.
 */
 
 /* Basic Containers -------------------------------------------------*/
 
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic); 
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
 
 body {font-family:Arial; font-size:12px; color:#aeaeae; }
 .container {width:94.5%; margin:0; }
@@ -54,17 +54,11 @@ a:hover,a:focus,a:active {color:#eeeded; }
 .texture_overlay_1{background:url(../images/pattern_1.png) repeat left top;}
 .texture_overlay_2{background:url(../images/pattern_2.png) repeat left top;}
 .slider-wrapper {width:100%; position:relative; }
-.nivo-caption {max-width:550px; min-width:400px; overflow:hidden; bottom:50px; right:25px; font-family:'Roboto', Arial; font-weight:lighter; text-align:right;}
-.nivo-caption a {text-decoration:none; border:none !important; }
-.nivo-caption a:hover {text-decoration:underline; }
-.nivo-html-caption {display:none; }
-.nivoSlider .slide{width:100%; height:100%; position:fixed; -moz-background-size:cover; -webkit-background-size:cover; -khtml-background-size:cover; background-size:cover; }
 div.slide-title {display:block; background-color:transparent; color:#fff; font:bold 34px "Roboto Condensed", Arial; text-transform:uppercase; text-align:right;}
 .home_front_wrap_main{height:100%;}
 div.slide-title span{background:url(../images/transparent_black.png) repeat left top; display:inline-block; padding:10px 15px;}
 div.slide-title a{color:#fff;}
 a div.slide-title{color:#eeeded; text-decoration:none; border:none !important;}
-.nivo-caption a:hover div.slide-title{color:#fff; border:none;}
 /*Homepage --------------------------------------------------*/
 h2#page-title,.archive h1.page-title,.page h1.entry-title {font-size:30.52px; font-family:'Roboto Condensed', Arial; font-weight:lighter; display:inline-block; clear:both; text-transform:uppercase; padding:51px 0 0; color:#eeeded; }
 h2#page-title:first-letter,.archive h1.page-title:first-letter,.page h1.entry-title:first-letter {color:#86c301; }
@@ -292,7 +286,6 @@ mark{background-color:transparent !important;}
 	#colophon #footertext {float:left; }
 	div.slide-title {font-size:12px; display:block; }
 	/*div.slide-description {display:none; }*/
-	.nivo-caption {max-width:320px; min-width:50px; }
 	#footer-sidebar .footer-column {width:80%; margin:auto; }
 	#secondary.home_front_wrap{margin-bottom:200px;}
 }
