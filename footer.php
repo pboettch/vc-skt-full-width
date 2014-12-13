@@ -60,7 +60,9 @@
 
 </div><!-- #primary -->
   </div><!-- wrapper -->
-
+  <?php if( is_home() ) { ?>
+<div id="supersized-loader"></div>
+<?php } ?>
 <?php wp_footer(); ?>
 </body>
 </html>

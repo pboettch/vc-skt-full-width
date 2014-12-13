@@ -5,7 +5,7 @@ Author: SKT Themes
 Author URI: http://www.sktthemes.net
 Description: SKT Full Width as the name suggests is a full width wordpress theme. Often it is said images speak more than words and this is exactly how full width theme works. Get a nice website on top of nicely shot background images. Home page has customizable slider backgrounds with text optional. Logo, layout settings, social icons and contact details are easily customizeable in this Full Width Theme. This theme looks good on all devices and is responsive. Can be used by Photo bloggers, casual bloggers, portfolio, design studio, corporate sites as well. Added WooCommerce compatibility. Demo link: http://sktthemes.net/demo/fullwidth/
 
-Version: 1.3.9
+Version: 1.4
 License: GNU General Public License
 License URI: license.txt
 Text Domain: skt_full_width
@@ -820,3 +820,7 @@ body.custom-background{
 }
 
 #supersized {padding: 0px !important; margin: 0px !important;} 
+
+/* ------ Woocommerce ------- */
+select.orderby{ margin:0; padding:0; height:35px; font:14x 'PT Sans', Helvetica, sans-serif; color:#4e4e4e; border:1px solid #cccccc;}
+.woocommerce ul.products li.product .price, .woocommerce-page ul.products li.product .price{ color:#a0ce4e !important;}

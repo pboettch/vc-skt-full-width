@@ -30,6 +30,7 @@ function skt_full_width_setup() {
 	load_theme_textdomain( 'skt-full-width', get_template_directory() . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
 	add_theme_support( 'post-thumbnails' );
+	add_theme_support( 'woocommerce' );
 	add_image_size('homepage-thumb',240,145,true);
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'skt-full-width' ),
