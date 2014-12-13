@@ -107,7 +107,18 @@ function optionsframework_fields() {
 
 		// Basic text input
 		case 'text':
-			$output .= '<input id="' . esc_attr( $value['id'] ) . '" class="of-input" name="' . esc_attr( $option_name . '[' . $value['id'] . ']' ) . '" type="text" value="' . esc_attr( $val ) . '" />';
+			$subtype = '';
+			$valOutput = '';
+			if ( isset( $value['subtype'] ) ) {
+				$subtype = $value['subtype'];
+				if( $subtype == 'email' )
+					$valOutput = sanitize_email( $val );
+				elseif( $subtype == 'url' )
+					$valOutput = esc_url( $val );
+			} else {
+				$valOutput = esc_attr( $val );
+			}
+			$output .= '<input id="' . esc_attr( $value['id'] ) . '" class="of-input" name="' . esc_attr( $option_name . '[' . $value['id'] . ']' ) . '" type="text" value="' . $valOutput . '" />';
 			break;
 
 		// Password input

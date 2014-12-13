@@ -42,7 +42,7 @@ function optionsframework_options() {
 		'desc' => __('Upload your logo here', 'skt-full-width'),
 		'id' => 'logo',
 		'class' => '',
-		'std'	=> get_template_directory_uri()."/images/logo.png",
+		'std'	=> esc_url( get_template_directory_uri()."/images/logo.png" ),
 		'type' => 'upload');
 				
 		
@@ -50,7 +50,7 @@ function optionsframework_options() {
 		'name' => __('Copyright Text', 'skt-full-width'),
 		'desc' => __('Some Text regarding copyright of your site, you would like to display in the footer.', 'skt-full-width'),
 		'id' => 'footertext2',
-		'std' => 'Full Width 2014. All Rights Reserved',
+		'std' => esc_html( 'Full Width 2014. All Rights Reserved' ),
 		'type' => 'text');
 	
 	//Layout Settings
@@ -113,7 +113,8 @@ function optionsframework_options() {
 		'desc' => __('Url', 'skt-full-width'),
 		'id' => 'slideurl1',
 		'std' => '',
-		'type' => 'text');		
+		'type' => 'text',
+		'subtype' => 'url');		
 	
 	$options[] = array(
 		'name' => __('Slider Image 2', 'skt-full-width'),
@@ -138,7 +139,8 @@ function optionsframework_options() {
 		'desc' => __('Url', 'skt-full-width'),
 		'id' => 'slideurl2',
 		'std' => '',
-		'type' => 'text');	
+		'type' => 'text',
+		'subtype' => 'url');	
 		
 	$options[] = array(
 		'name' => __('Slider Image 3', 'skt-full-width'),
@@ -163,7 +165,8 @@ function optionsframework_options() {
 		'desc' => __('Url', 'skt-full-width'),
 		'id' => 'slideurl3',
 		'std' => '',
-		'type' => 'text');		
+		'type' => 'text',
+		'subtype' => 'url');		
 	
 	$options[] = array(
 		'name' => __('Slider Image 4', 'skt-full-width'),
@@ -188,7 +191,8 @@ function optionsframework_options() {
 		'desc' => __('Url', 'skt-full-width'),
 		'id' => 'slideurl4',
 		'std' => '',
-		'type' => 'text');		
+		'type' => 'text',
+		'subtype' => 'url');		
 	
 	$options[] = array(
 		'name' => __('Slider Image 5', 'skt-full-width'),
@@ -213,7 +217,8 @@ function optionsframework_options() {
 		'desc' => __('Url', 'skt-full-width'),
 		'id' => 'slideurl5',
 		'std' => '',
-		'type' => 'text');	
+		'type' => 'text',
+		'subtype' => 'url');	
 			
 	//Social Settings
 	
@@ -229,9 +234,10 @@ function optionsframework_options() {
 		'name' => __('Facebook', 'skt-full-width'),
 		'desc' => __('Facebook Profile or Page URL i.e. http://facebook.com/username/ ', 'skt-full-width'),
 		'id' => 'facebook',
-		'std' => '#',
+		'std' => esc_url( '#' ),
 		'class' => 'mini',
-		'type' => 'text');
+		'type' => 'text',
+		'subtype' => 'url');
 	
 	$options[] = array(
 		'name' => __('Twitter', 'skt-full-width'),
@@ -245,17 +251,19 @@ function optionsframework_options() {
 		'name' => __('Google Plus', 'skt-full-width'),
 		'desc' => __('Google Plus profile url, including "http://"', 'skt-full-width'),
 		'id' => 'google',
-		'std' => '#',
+		'std' => esc_url( '#' ),
 		'class' => 'mini',
-		'type' => 'text');
+		'type' => 'text',
+		'subtype' => 'url');
 		
 	$options[] = array(
 		'name' => __('Linkedin', 'skt-full-width'),
 		'desc' => __('Linkedin URL', 'skt-full-width'),
 		'id' => 'linkedin',
-		'std' => '#',
+		'std' => esc_url( '#' ),
 		'class' => 'mini',
-		'type' => 'text');	
+		'type' => 'text',
+		'subtype' => 'url');	
 
 	
 	// Contact Details
@@ -266,32 +274,33 @@ function optionsframework_options() {
 		$options[] = array(
 		'desc' => __('Company Name', 'skt-full-width'),
 		'id' => 'contact1',
-		'std' => 'Full Width',
+		'std' => esc_html( 'Full Width' ),
 		'type' => 'text');	
 		
 		$options[] = array(
 		'desc' => __('Address 1', 'skt-full-width'),
 		'id' => 'contact2',
-		'std' => '123 Some Street',
+		'std' => esc_html( '123 Some Street' ),
 		'type' => 'text');	
 		
 		$options[] = array(
 		'desc' => __('Address 2', 'skt-full-width'),
 		'id' => 'contact3',
-		'std' => 'California, USA',
+		'std' => esc_html( 'California, USA' ),
 		'type' => 'text');
 		
 		$options[] = array(
 		'desc' => __('Phone', 'skt-full-width'),
 		'id' => 'contact4',
-		'std' => '100 2000 300',
+		'std' => esc_html( '100 2000 300' ),
 		'type' => 'text');
 		
 		$options[] = array(
 		'desc' => __('Email', 'skt-full-width'),
 		'id' => 'contact5',
-		'std' => 'info@example.com',
-		'type' => 'text');	
+		'std' => sanitize_email( 'info@example.com' ),
+		'type' => 'text',
+		'subtype' => 'email');	
 
 	// Support					
 		$options[] = array(

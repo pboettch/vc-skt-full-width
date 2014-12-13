@@ -19,8 +19,8 @@
 
 <body <?php body_class(); ?>>
 <?php 
-$front_page = esc_html( get_option('page_on_front') );
-$post_page = esc_html( get_option('page_for_posts') );
+$front_page = get_option('page_on_front');
+$post_page = get_option('page_for_posts');
 ?>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>
@@ -43,9 +43,9 @@ $post_page = esc_html( get_option('page_for_posts') );
                     <?php
                     $slider_flag = false;
                     for ($i=1;$i<6;$i++) {
-                        $caption = ((of_get_option('slidetitle'.$i, true)=="")?"":"#caption_".$i);
+                        $caption = ( of_get_option('slidetitle'.$i, true) == "") ? "" : "#caption_".$i;
                         if ( of_get_option('slide'.$i, true) != "" ) {
-                            echo "<div class='slide' style='background-image:url(".of_get_option('slide'.$i, true).");'><a href='".esc_url(of_get_option('slideurl'.$i, true))."'><img src='".of_get_option('slide'.$i, true)."' title='".$caption."' height='100%' width='100%'></a></div>"; 
+                            echo "<div class='slide' style='background-image:url(".esc_url_raw( of_get_option('slide'.$i, true) ).");'><a href='".esc_url(of_get_option('slideurl'.$i, true))."'><img src='".esc_url( of_get_option('slide'.$i, true) )."' title='".esc_attr($caption)."' height='100%' width='100%'></a></div>"; 
                             $slider_flag = true;
                         }
                     }
@@ -57,8 +57,8 @@ $post_page = esc_html( get_option('page_for_posts') );
 					$caption = ((of_get_option('slidetitle'.$i, true)=="")?"":"#caption_".$i);
 					if ($caption != ""){
 						echo "<div id='caption_".$i."' class='nivo-html-caption'>";
-						echo "<div class='slide-title'><span>".of_get_option('slidetitle'.$i, true)."</span></div>";
-						echo "<div class='slide-description'><span>".of_get_option('slidedesc'.$i, true)."</span></div>";
+						echo "<div class='slide-title'><span>".esc_attr( of_get_option('slidetitle'.$i, true) )."</span></div>";
+						echo "<div class='slide-description'><span>".esc_html( of_get_option('slidedesc'.$i, true) )."</span></div>";
 						if( of_get_option('slideurl'.$i, true) != '' ){
 							echo "<div class='slide-readmore'><span><a href='".esc_url(of_get_option('slideurl'.$i, true))."'>Read More</a></span> <img src='".get_template_directory_uri()."/images/menu_sub_icon.png' /></div>";
 						}
@@ -94,7 +94,7 @@ $post_page = esc_html( get_option('page_for_posts') );
     <div id="secondary" class="widget-area" role="complementary">
      <div class="header">
             <div class="logo">
-               <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo of_get_option('logo', true); ?>" /></a></h1>
+               <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( of_get_option('logo', true) ); ?>" /></a></h1>
 				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2><br />
             </div>
       

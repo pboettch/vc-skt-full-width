@@ -21,7 +21,7 @@
                      <a target="_blank" href="<?php echo esc_url(of_get_option('facebook', true)); ?>" title="Facebook" ><div class="fb">Facebook</div></a>
                      <?php } ?>
                     <?php if ( of_get_option('twitter', true) != "") { ?>
-                     <a target="_blank" href="<?php echo esc_url("http://twitter.com/".of_get_option('twitter', true)); ?>" title="Twitter" ><div class="twitt">Twitter</div></a>
+                     <a target="_blank" href="<?php echo esc_url("http://twitter.com/". esc_attr(of_get_option('twitter', true)) ); ?>" title="Twitter" ><div class="twitt">Twitter</div></a>
                      <?php } ?>
                      <?php if ( of_get_option('google', true) != "") { ?>
                      <a target="_blank" href="<?php echo esc_url(of_get_option('google', true)); ?>" title="Google Plus" > <div class="gplus">Google +</div></a>
@@ -33,24 +33,22 @@
                 </div>
             </div><!-- social -->
             <div class="contact"><h2>Contact Info</h2>
-                 <h3 class="company-title"><?php echo of_get_option('contact1', true); ?></h3>
-                 <p><?php echo of_get_option('contact2', true); ?></p>
-                 <p><?php echo of_get_option('contact3', true); ?></p>
-                 <p><strong>Phone :</strong> <?php echo of_get_option('contact4', true); ?></p>
-                 <p><strong>Email :</strong> <?php echo of_get_option('contact5', true); ?></p>
+                 <h3 class="company-title"><?php echo esc_html( of_get_option('contact1', true) ); ?></h3>
+                 <p><?php echo esc_html( of_get_option('contact2', true) ); ?></p>
+                 <p><?php echo esc_html( of_get_option('contact3', true) ); ?></p>
+                 <p><strong>Phone :</strong> <?php echo esc_html( of_get_option('contact4', true) ); ?></p>
+                 <p><strong>Email :</strong> <?php echo sanitize_email( of_get_option('contact5', true) ); ?></p>
             </div><!-- contact -->
             <div class="clear"></div>
         </div>
 	</footer><!-- #colophon -->
   <div class="footer-bottom">
 	  <div class="foot_col_container">
-      <?php if ( of_get_option('credit1', true) == 0 ) { ?>
-		
-      <?php } //endif ?>  
         <div class="bottom-left">
         	<?php
 			if ( (function_exists( 'of_get_option' ) && (of_get_option('footertext2', true) != 1) ) ) {
-			 	echo of_get_option('footertext2', true); } ?>
+			 	echo esc_html( of_get_option('footertext2', true) ); 
+			} ?>
         </div><!-- bottom-left -->    
         <div class="bottom-right">
 			<?php do_action( 'skt_full_width_credits' ); ?>
