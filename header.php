@@ -14,29 +14,13 @@
 <title><?php wp_title( '|', true, 'right' ); ?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
 <?php wp_head(); ?>
-
-<script>
-jQuery(document).ready(function() {
-	jQuery("#header-bottom-shape").click(function(){
-		if ( jQuery( "#site-nav" ).is( ":hidden" ) ) {
-			jQuery( "#site-nav" ).slideDown("slow");
-		} else {
-			jQuery( "#site-nav" ).slideUp("slow");
-		}
-		jQuery( this ).toggleClass('showDown');
-	});
-	jQuery( "#site-nav li:last" ).addClass("noBottomBorder");
-	jQuery( "#site-nav li:parent" ).find('ul.sub-menu').parent().addClass("haschild");
-});
-</script>
 </head>
 
 <body <?php body_class(); ?>>
 <?php 
-$front_page = get_option('page_on_front');
-$post_page = get_option('page_for_posts');
+$front_page = esc_html( get_option('page_on_front') );
+$post_page = esc_html( get_option('page_for_posts') );
 ?>
 <div id="page" class="hfeed site">
 	<?php do_action( 'before' ); ?>

@@ -23,6 +23,7 @@ a:hover,a:focus,a:active {color:#eeeded; }
 .header .logo h1.site-title a{font:700 45px 'Roboto Condensed', Arial; text-decoration:none; }
 .header .logo h1.site-title:first-letter{ color:#86c301; }
 /* NAVIGATION */
+.page-template-page-full-width-php #site-nav{display:none;}
 #site-nav{ width:100%; margin:0; padding:0 0 60px; background:url(../images/menu-bg.png); text-transform:uppercase; font:300 16px 'Roboto Condensed', Arial; }
 #site-nav ul{ margin:0; padding:0; }
 #site-nav ul li{ display:block; position:relative; list-style:none; border-top:1px #2c2d2e solid; border-bottom:1px #040506 solid; padding:0; line-height:normal; }
@@ -143,6 +144,7 @@ aside ul li a:hover{color:#7BB302; background:url(../images/list-arrow-hover.png
 .full-width {width:100% !important; padding:10px; }
 /* Colophon */
 #colophon {background:#000; opacity:0.9; color:#eeeded; padding:20px; }
+.page-template-page-full-width-php .foot_col_container{width:700px; margin:0 auto;}
 #colophon h2{font:300 19.84px 'Roboto Condensed', Arial; color:#eeeded; border-bottom:1px solid #242425; text-transform:uppercase; padding-bottom:15px; margin-bottom:15px; }
 #colophon .site-info {float:left; }
 #colophon #footertext {float:right; }
@@ -165,9 +167,10 @@ h3.company-title:first-letter{color:#7bb302; }
 .social .gplus:hover{ background:url(../images/gplus-icon-hover.png) no-repeat scroll 0 0; }
 .social .linkedin{ width:100%; margin:0 0 9px; padding:2px 0 0 40px; background:url(../images/in-icon.png) no-repeat scroll 0 0; height:21px; }
 .social .linkedin:hover{ background:url(../images/in-icon-hover.png) no-repeat scroll 0 0; }
-.contact{ width:200px; float:right; margin:0; padding:0; }
+.contact{ width:200px; float:left; margin:0 0 0 31px; padding:0; }
 .contact p{ margin:0; padding:0; line-height:25px; }
 .footer-bottom{ width:94.5%; margin:0 auto; padding:20px; background-color:#000; opacity:0.8; }
+.page-template-page-full-width-php .footer-bottom{width:96%; padding:20px 2%;}
 .footer-bottom a{color:#7bb302; }
 .footer-bottom .bottom-left{ width:260px; margin:0; padding:0; float:left; }
 .footer-bottom .bottom-right{ width:270px; margin:0; padding:0; float:right; text-align:right; }

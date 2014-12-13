@@ -5,7 +5,7 @@ Thank you for Using SKT Full Width Wordpress Theme.
 	
 ## Copyrights for Resources used in this theme.
 
-	i) Default image that has been used come under GPL v2.
+	i) All images that have been used come under GPL v2.
 ii) Social icons: All social icons used come under GPL v2.
 iii) We have used Nivoslider js to slide the background images on homepage. Nivoslider comes under MIT license: More details: 
 	        http://nivo.dev7studios.com

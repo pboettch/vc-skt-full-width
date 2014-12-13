@@ -61,7 +61,7 @@ function optionsframework_options() {
 	
 	$options[] = array(
 		'name' => "Header Layout",
-		'desc' => "Select Layout for Posts & Pages.",
+		'desc' => "Select Layout for Menu position.",
 		'id' => "sidebar-layout",
 		'std' => "left",
 		'type' => "images",
