@@ -42,7 +42,7 @@ function optionsframework_options() {
 		'desc' => __('Upload your logo here', 'skt-full-width'),
 		'id' => 'logo',
 		'class' => '',
-		'std'	=> get_template_directory_uri()."/images/logo.png",
+		'std'	=> '',
 		'type' => 'upload');
 		
 	$options[] = array(

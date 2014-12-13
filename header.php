@@ -71,7 +71,13 @@ $post_page = get_option('page_for_posts');
         <div id="secondary" class="widget-area <?php if( is_front_page() || is_home()  ){ echo 'home_front_wrap'; } ?>" role="complementary">
             <div class="header">
                 <div class="logo">
-                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img src="<?php echo esc_url( of_get_option('logo', true) ); ?>" /></a></h1>
+                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+                    	<?php if( of_get_option('logo', true) != '' ) { ?>
+	                    	<img src="<?php echo esc_url( of_get_option('logo', true) ); ?>" />
+                        <?php } else { ?>
+							<?php bloginfo( 'name' ); ?>
+                        <?php } ?>
+                    </a></h1>
                     <h2 class="site-description"><?php bloginfo( 'description' ); ?></h2><br />
                 </div>
               
