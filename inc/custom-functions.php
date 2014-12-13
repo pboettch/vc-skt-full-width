@@ -23,14 +23,6 @@ function skt_full_width_optionsframework_custom_scripts() { ?>
 }
 
 
-// hide customize and custom backgrounds page
-add_action('admin_init', 'skt_full_width_remove_submenu_elements', 102);
-function skt_full_width_remove_submenu_elements(){
-	remove_submenu_page( 'themes.php', 'customize.php' );
-	//remove_submenu_page( 'themes.php', 'custom-background' );
-	remove_submenu_page( 'themes.php', 'custom-header' );
-}
-
 add_action('wp_head','hook_custom_javascript');
 function hook_custom_javascript(){?>
 	<script>

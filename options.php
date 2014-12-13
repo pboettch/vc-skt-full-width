@@ -42,7 +42,7 @@ function optionsframework_options() {
 		'desc' => __('Upload your logo here', 'skt-full-width'),
 		'id' => 'logo',
 		'class' => '',
-		'std'	=> esc_url( get_template_directory_uri()."/images/logo.png" ),
+		'std'	=> get_template_directory_uri()."/images/logo.png",
 		'type' => 'upload');
 				
 		
@@ -50,7 +50,7 @@ function optionsframework_options() {
 		'name' => __('Copyright Text', 'skt-full-width'),
 		'desc' => __('Some Text regarding copyright of your site, you would like to display in the footer.', 'skt-full-width'),
 		'id' => 'footertext2',
-		'std' => esc_html( 'Full Width 2014. All Rights Reserved' ),
+		'std' => 'Full Width 2014. All Rights Reserved',
 		'type' => 'text');
 	
 	//Layout Settings
@@ -234,7 +234,7 @@ function optionsframework_options() {
 		'name' => __('Facebook', 'skt-full-width'),
 		'desc' => __('Facebook Profile or Page URL i.e. http://facebook.com/username/ ', 'skt-full-width'),
 		'id' => 'facebook',
-		'std' => esc_url( '#' ),
+		'std' => '#',
 		'class' => 'mini',
 		'type' => 'text',
 		'subtype' => 'url');
@@ -251,7 +251,7 @@ function optionsframework_options() {
 		'name' => __('Google Plus', 'skt-full-width'),
 		'desc' => __('Google Plus profile url, including "http://"', 'skt-full-width'),
 		'id' => 'google',
-		'std' => esc_url( '#' ),
+		'std' => '#',
 		'class' => 'mini',
 		'type' => 'text',
 		'subtype' => 'url');
@@ -260,7 +260,7 @@ function optionsframework_options() {
 		'name' => __('Linkedin', 'skt-full-width'),
 		'desc' => __('Linkedin URL', 'skt-full-width'),
 		'id' => 'linkedin',
-		'std' => esc_url( '#' ),
+		'std' => '#',
 		'class' => 'mini',
 		'type' => 'text',
 		'subtype' => 'url');	
@@ -274,25 +274,25 @@ function optionsframework_options() {
 		$options[] = array(
 		'desc' => __('Company Name', 'skt-full-width'),
 		'id' => 'contact1',
-		'std' => esc_html( 'Full Width' ),
+		'std' => 'Full Width',
 		'type' => 'text');	
 		
 		$options[] = array(
 		'desc' => __('Address 1', 'skt-full-width'),
 		'id' => 'contact2',
-		'std' => esc_html( '123 Some Street' ),
+		'std' => '123 Some Street',
 		'type' => 'text');	
 		
 		$options[] = array(
 		'desc' => __('Address 2', 'skt-full-width'),
 		'id' => 'contact3',
-		'std' => esc_html( 'California, USA' ),
+		'std' => 'California, USA',
 		'type' => 'text');
 		
 		$options[] = array(
 		'desc' => __('Phone', 'skt-full-width'),
 		'id' => 'contact4',
-		'std' => esc_html( '100 2000 300' ),
+		'std' => '100 2000 300',
 		'type' => 'text');
 		
 		$options[] = array(

@@ -104,10 +104,10 @@ add_action( 'wp_enqueue_scripts', 'skt_full_width_scripts' );
 
 function skt_full_width_custom_head_codes() {
  if ( (function_exists( 'of_get_option' )) && (of_get_option('headcode1', true) != 1) ) {
-	echo of_get_option('headcode1', true);
+	echo esc_html( of_get_option('headcode1', true) );
  }
  if ( (function_exists( 'of_get_option' )) && (of_get_option('style2', true) != 1) ) {
-	echo "<style>".of_get_option('style2', true)."</style>";
+	echo "<style>". esc_html( of_get_option('style2', true) ) ."</style>";
  }
  //Modify CSS a little if Slider is disabled. 
 if ( ( of_get_option('slider_enabled') == 0 ) || ( (is_home() == false) ) )  {

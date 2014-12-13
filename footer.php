@@ -52,7 +52,7 @@
         </div><!-- bottom-left -->    
         <div class="bottom-right">
 			<?php do_action( 'skt_full_width_credits' ); ?>
-			Full Width Theme by <a href="<?php echo SKT_URL; ?>" target="_blank" rel="designer">SKT Themes</a>
+			Full Width Theme by <a href="<?php echo esc_url( SKT_URL ); ?>" target="_blank" rel="designer">SKT Themes</a>
 		</div><!-- bottom-right --><div class="clear"></div>
         </div><!-- footer-bottom -->
 	</div>
