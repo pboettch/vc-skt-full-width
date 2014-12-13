@@ -32,23 +32,6 @@ function skt_full_width_header_style() {
 	?>
 	<style type="text/css">
 	<?php
-		// Has the text been hidden?
-		if ( 'blank' == $header_text_color ) :
-	?>
-		.site-title,
-		.site-description {
-			position: absolute;
-			clip: rect(1px, 1px, 1px, 1px);
-		}
-	<?php
-		// If the user has set a custom color for the text use that
-		else :
-	?>
-		.site-title a,
-		.site-description {
-			color: #<?php echo $header_text_color; ?>;
-		}
-	<?php endif; 
 		//Check if user has defined any header image.
 		if ( get_header_image() ) :
 	?>

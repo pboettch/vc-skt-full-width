@@ -352,7 +352,7 @@ function optionsframework_options() {
 		'type' => 'info');	
 		
 	 $options[] = array(
-		'desc' => __('<a href="'.SKT_THEME_URL.'" target="_blank"><img src="'.get_template_directory_uri().'/images/sktskill.jpg"></a><p><em>Love this theme? Donate us via PayPal at <strong>sonalsinha21@gmail.com</strong></em></p>', 'skt-full-width'),
+		'desc' => __('<a href="'.SKT_THEME_URL.'" target="_blank"><img src="'.get_template_directory_uri().'/images/sktskill.jpg"></a><p><em><a target="_blank" href="http://www.sktthemes.net/themes/skt_full_width_pro/">Buy PRO version for only $30 with more features and access to our support forum.</a></em></p>', 'skt-full-width'),
 		'type' => 'info');	
 	
 	

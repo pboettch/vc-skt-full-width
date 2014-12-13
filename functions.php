@@ -193,6 +193,12 @@ function skt_full_width_custom_head_codes() {
 			progress_bar			:	1,			// Timer for each slide			
 			mouse_scrub				:	0
 		});
+		
+		// hide controller if only 1 image exist.
+		var cntSlide = jQuery('ul#thumb-list li').length;
+		if( cntSlide < 2 ){
+			jQuery('#controls-wrapper').css('visibility','hidden');
+		}
 	});
 	
 	</script><?php

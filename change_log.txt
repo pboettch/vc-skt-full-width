@@ -45,3 +45,6 @@ Version 1.3.6
 Version 1.3.7
 	i) Resolved static home page layout bug.
 	ii) Better iPhone compatibility.
+
+Version 1.3.8
+	i) 10px black bar issue for both iPhone and iPad solved.

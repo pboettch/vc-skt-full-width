@@ -231,6 +231,8 @@ function optionsframework_page() {
         <?php echo optionsframework_tabs(); ?>
     </h2>
     <div id="optionsframework-metabox" class="metabox-holder">
+    	<div style="padding-bottom:10px;"><a href="http://www.sktthemes.net/themes/skt_full_width_pro/" target="_blank">Buy PRO version for only $30 with more features and access to our support forum.</a></div>
+    	<div style="clear:both"></div>
 	    <div id="optionsframework" class="postbox" style="width:72%; float:left;" >
 			<form action="options.php" method="post">
 			<?php settings_fields( 'optionsframework' ); ?>
@@ -253,9 +255,9 @@ function optionsframework_page() {
                     </div>
                 </div>
                 <div class="postbox">
-                    <h3 class="hndle"><span>Donate</span></h3>
+                    <h3 class="hndle"><span>Buy PRO version</span></h3>
                     <div class="inside">
-                        <p><em>Love this theme? Donate us via PayPal at <strong>sonalsinha21@gmail.com</strong></em></p>
+                        <p><em><a href="http://www.sktthemes.net/themes/skt_full_width_pro/" target="_blank">Click here to check PRO version</a></em></p>
                     </div>
                 </div>
                 <div class="postbox">
